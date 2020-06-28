@@ -1,0 +1,5685 @@
+
+(object Petal
+    version    	40)
+
+(object Design "Logical View"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    file_name  	"D:\\CBuilder\\Hugo\\Case\\ModelAGE\\Modelos\\modelAGE.mdl"
+    quid       	"3B17E0130198"
+    defaults   	(object defaults
+	rightMargin 	0.250000
+	leftMargin 	0.250000
+	topMargin  	0.250000
+	bottomMargin 	0.500000
+	pageOverlap 	0.250000
+	clipIconLabels 	TRUE
+	autoResize 	TRUE
+	snapToGrid 	TRUE
+	gridX      	31
+	gridY      	31
+	defaultFont 	(object Font
+	    size       	10
+	    face       	"Arial"
+	    bold       	FALSE
+	    italics    	FALSE
+	    underline  	FALSE
+	    strike     	FALSE
+	    color      	0
+	    default_color 	TRUE)
+	showMessageNum 	3
+	showClassOfObject 	TRUE
+	notation   	"Unified")
+    root_usecase_package 	(object Class_Category "Use Case View"
+	quid       	"3B116FB6019E"
+	exportControl 	"Public"
+	global     	TRUE
+	logical_models 	(list unit_reference_list
+	    (object Class "Usuario"
+		quid       	"3B117D580283"
+		stereotype 	"Actor")
+	    (object Association "$UNNAMED$0"
+		quid       	"3B117DA80314"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$1"
+			quid       	"3B117DA9009E"
+			supplier   	"Seleciona Objeto"
+			quidu      	"3B117D8100AB"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$2"
+			quid       	"3B117DA9009F"
+			supplier   	"Usuario"
+			quidu      	"3B117D580283")))
+	    (object Association "$UNNAMED$3"
+		quid       	"3B117DAA028B"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$4"
+			quid       	"3B117DAB0138"
+			supplier   	"Seleciona Conector"
+			quidu      	"3B117D8C0057"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$5"
+			quid       	"3B117DAB0139"
+			supplier   	"Usuario"
+			quidu      	"3B117D580283")))
+	    (object Association "$UNNAMED$6"
+		quid       	"3B117E06007A"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$7"
+			quid       	"3B117E06026F"
+			supplier   	"Seleciona Grupo Objetos"
+			quidu      	"3B117DD90120"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$8"
+			quid       	"3B117E060270"
+			supplier   	"Usuario"
+			quidu      	"3B117D580283")))
+	    (object Association "$UNNAMED$9"
+		quid       	"3B117E2501A1"
+		stereotype 	"extends"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$10"
+			quid       	"3B117E250382"
+			supplier   	"Arrasta Grupo Objetos"
+			quidu      	"3B117E190009"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$11"
+			quid       	"3B117E250383"
+			supplier   	"Seleciona Grupo Objetos"
+			quidu      	"3B117DD90120")))
+	    (object Association "$UNNAMED$12"
+		quid       	"3B117E310361"
+		stereotype 	"extends"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$13"
+			quid       	"3B117E320091"
+			supplier   	"Apaga Conector"
+			quidu      	"3B117DCB0057"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$14"
+			quid       	"3B117E320092"
+			supplier   	"Seleciona Conector"
+			quidu      	"3B117D8C0057")))
+	    (object Association "$UNNAMED$15"
+		quid       	"3B117E670066"
+		stereotype 	"extends"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$16"
+			quid       	"3B117E680338"
+			supplier   	"Apaga Objeto"
+			quidu      	"3B117DB00370"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$17"
+			quid       	"3B117E680339"
+			supplier   	"Seleciona Objeto"
+			quidu      	"3B117D8100AB")))
+	    (object Association "$UNNAMED$18"
+		quid       	"3B117E6A007E"
+		stereotype 	"extends"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$19"
+			quid       	"3B117E6A0291"
+			supplier   	"Arrasta Objeto"
+			quidu      	"3B117D770010"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$20"
+			quid       	"3B117E6A0292"
+			supplier   	"Seleciona Objeto"
+			quidu      	"3B117D8100AB")))
+	    (object Association "$UNNAMED$21"
+		quid       	"3B117EB90244"
+		stereotype 	"extends"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$22"
+			quid       	"3B117EBA0065"
+			supplier   	"Muda FillColor Objeto"
+			quidu      	"3B117EA00389"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$23"
+			quid       	"3B117EBA0066"
+			supplier   	"Seleciona Objeto"
+			quidu      	"3B117D8100AB")))
+	    (object Association "$UNNAMED$24"
+		quid       	"3B117F0F0035"
+		stereotype 	"extends"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$25"
+			quid       	"3B117F0F01C6"
+			supplier   	"Muda LineColor Conector"
+			quidu      	"3B117F020311"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$26"
+			quid       	"3B117F0F01C7"
+			supplier   	"Seleciona Conector"
+			quidu      	"3B117D8C0057")))
+	    (object Association "$UNNAMED$27"
+		quid       	"3B117F6102B4"
+		stereotype 	"extends"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$28"
+			quid       	"3B117F620071"
+			supplier   	"Muda LineColor Objeto"
+			quidu      	"3B117F510148"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$29"
+			quid       	"3B117F620072"
+			supplier   	"Seleciona Objeto"
+			quidu      	"3B117D8100AB")))
+	    (object Association "$UNNAMED$30"
+		quid       	"3B117F830096"
+		stereotype 	"extends"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$31"
+			quid       	"3B117F830209"
+			supplier   	"Muda Fonte Objeto"
+			quidu      	"3B117F730300"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$32"
+			quid       	"3B117F83020A"
+			supplier   	"Seleciona Objeto"
+			quidu      	"3B117D8100AB")))
+	    (object Class_Category "SelecaoObjeto"
+		quid       	"3B117FAD019B"
+		exportControl 	"Public"
+		logical_models 	(list unit_reference_list
+		    (object UseCase "Seleciona Objeto"
+			quid       	"3B117D8100AB")
+		    (object UseCase "Muda FillColor Objeto"
+			quid       	"3B117EA00389")
+		    (object UseCase "Muda LineColor Objeto"
+			quid       	"3B117F510148")
+		    (object UseCase "Muda Fonte Objeto"
+			quid       	"3B117F730300")
+		    (object UseCase "Apaga Objeto"
+			quid       	"3B117DB00370")
+		    (object UseCase "Arrasta Objeto"
+			quid       	"3B117D770010")
+		    (object UseCase "Abre Propriedades Objeto"
+			quid       	"3B1180870393")
+		    (object Association "$UNNAMED$33"
+			quid       	"3B118095019E"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$34"
+				quid       	"3B1180950311"
+				supplier   	"Abre Propriedades Objeto"
+				quidu      	"3B1180870393"
+				is_navigable 	TRUE)
+			    (object Role "$UNNAMED$35"
+				quid       	"3B1180950312"
+				supplier   	"Seleciona Objeto"
+				quidu      	"3B117D8100AB"))))
+		logical_presentations 	(list unit_reference_list
+		    (object UseCaseDiagram "Overview"
+			quid       	"3B117FF60240"
+			title      	"Overview"
+			zoom       	100
+			max_height 	28350
+			max_width  	21600
+			origin_x   	0
+			origin_y   	0
+			items      	(list diagram_item_list
+			    (object ClassView "Class" "Usuario" @1
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(248, 341)
+				label      	(object ItemLabel
+				    Parent_View 	@1
+				    location   	(248, 498)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	327
+				    justify    	0
+				    label      	"Usuario")
+				icon       	"Actor"
+				quidu      	"3B117D580283"
+				annotation 	8
+				autoResize 	TRUE)
+			    (object UseCaseView "Muda FillColor Objeto" @2
+				location   	(341, 1178)
+				label      	(object ItemLabel
+				    Parent_View 	@2
+				    location   	(341, 1313)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	633
+				    justify    	0
+				    label      	"Muda FillColor Objeto")
+				quidu      	"3B117EA00389"
+				autoResize 	TRUE)
+			    (object UseCaseView "Muda LineColor Objeto" @3
+				location   	(806, 1364)
+				label      	(object ItemLabel
+				    Parent_View 	@3
+				    location   	(806, 1499)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	633
+				    justify    	0
+				    label      	"Muda LineColor Objeto")
+				quidu      	"3B117F510148"
+				height     	112
+				autoResize 	TRUE)
+			    (object UseCaseView "Muda Fonte Objeto" @4
+				location   	(1395, 1333)
+				label      	(object ItemLabel
+				    Parent_View 	@4
+				    location   	(1395, 1468)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	633
+				    justify    	0
+				    label      	"Muda Fonte Objeto")
+				quidu      	"3B117F730300"
+				height     	112
+				autoResize 	TRUE)
+			    (object UseCaseView "Apaga Objeto" @5
+				location   	(1457, 496)
+				label      	(object ItemLabel
+				    Parent_View 	@5
+				    location   	(1457, 631)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	633
+				    justify    	0
+				    label      	"Apaga Objeto")
+				quidu      	"3B117DB00370"
+				autoResize 	TRUE)
+			    (object UseCaseView "Arrasta Objeto" @6
+				location   	(1023, 186)
+				label      	(object ItemLabel
+				    Parent_View 	@6
+				    location   	(1023, 321)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	633
+				    justify    	0
+				    label      	"Arrasta Objeto")
+				quidu      	"3B117D770010"
+				autoResize 	TRUE)
+			    (object UseCaseView "Abre Propriedades Objeto" @7
+				location   	(1581, 899)
+				label      	(object ItemLabel
+				    Parent_View 	@7
+				    location   	(1581, 1034)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	633
+				    justify    	0
+				    label      	"Abre Propriedades Objeto")
+				quidu      	"3B1180870393"
+				height     	112
+				autoResize 	TRUE)
+			    (object UseCaseView "Seleciona Objeto" @8
+				location   	(744, 651)
+				label      	(object ItemLabel
+				    Parent_View 	@8
+				    location   	(744, 786)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	633
+				    justify    	0
+				    label      	"Seleciona Objeto")
+				quidu      	"3B117D8100AB"
+				autoResize 	TRUE)
+			    (object AssociationViewNew "$UNNAMED$0" @9
+				location   	(479, 483)
+				quidu      	"3B117DA80314"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$2" @10
+					Parent_View 	@9
+					location   	(-544, -416)
+					quidu      	"3B117DA9009F"
+					client     	@9
+					supplier   	@1
+					line_style 	0)
+				    (object RoleView "$UNNAMED$1" @11
+					Parent_View 	@9
+					location   	(-544, -416)
+					quidu      	"3B117DA9009E"
+					client     	@9
+					supplier   	@8
+					line_style 	0)))
+			    (object AssociationViewNew "$UNNAMED$21" @12
+				location   	(502, 965)
+				quidu      	"3B117EB90244"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$23" @13
+					Parent_View 	@12
+					location   	(68, -368)
+					quidu      	"3B117EBA0066"
+					client     	@12
+					supplier   	@8
+					line_style 	0)
+				    (object RoleView "$UNNAMED$22" @14
+					Parent_View 	@12
+					location   	(68, -368)
+					quidu      	"3B117EBA0065"
+					client     	@12
+					supplier   	@2
+					line_style 	0)))
+			    (object AssociationViewNew "$UNNAMED$27" @15
+				location   	(777, 1058)
+				quidu      	"3B117F6102B4"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$29" @16
+					Parent_View 	@15
+					location   	(-122, -399)
+					quidu      	"3B117F620072"
+					client     	@15
+					supplier   	@8
+					line_style 	0)
+				    (object RoleView "$UNNAMED$28" @17
+					Parent_View 	@15
+					location   	(-122, -399)
+					quidu      	"3B117F620071"
+					client     	@15
+					supplier   	@3
+					line_style 	0)))
+			    (object AssociationViewNew "$UNNAMED$30" @18
+				location   	(1117, 1042)
+				quidu      	"3B117F830096"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$32" @19
+					Parent_View 	@18
+					location   	(-278, -415)
+					quidu      	"3B117F83020A"
+					client     	@18
+					supplier   	@8
+					line_style 	0)
+				    (object RoleView "$UNNAMED$31" @20
+					Parent_View 	@18
+					location   	(-278, -415)
+					quidu      	"3B117F830209"
+					client     	@18
+					supplier   	@4
+					line_style 	0)))
+			    (object AssociationViewNew "$UNNAMED$15" @21
+				location   	(1099, 570)
+				quidu      	"3B117E670066"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$17" @22
+					Parent_View 	@21
+					location   	(-699, -515)
+					quidu      	"3B117E680339"
+					client     	@21
+					supplier   	@8
+					line_style 	0)
+				    (object RoleView "$UNNAMED$16" @23
+					Parent_View 	@21
+					location   	(-699, -515)
+					quidu      	"3B117E680338"
+					client     	@21
+					supplier   	@5
+					line_style 	0)))
+			    (object AssociationViewNew "$UNNAMED$18" @24
+				location   	(850, 469)
+				quidu      	"3B117E6A007E"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$20" @25
+					Parent_View 	@24
+					location   	(-855, -213)
+					quidu      	"3B117E6A0292"
+					client     	@24
+					supplier   	@8
+					line_style 	0)
+				    (object RoleView "$UNNAMED$19" @26
+					Parent_View 	@24
+					location   	(-855, -213)
+					quidu      	"3B117E6A0291"
+					client     	@24
+					supplier   	@6
+					line_style 	0)))
+			    (object AssociationViewNew "$UNNAMED$33" @27
+				location   	(1161, 772)
+				quidu      	"3B118095019E"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$34" @28
+					Parent_View 	@27
+					location   	(417, 121)
+					quidu      	"3B1180950311"
+					client     	@27
+					supplier   	@7
+					line_style 	0)
+				    (object RoleView "$UNNAMED$35" @29
+					Parent_View 	@27
+					location   	(417, 121)
+					quidu      	"3B1180950312"
+					client     	@27
+					supplier   	@8
+					line_style 	0)))))))
+	    (object Class_Category "SelecaoConector"
+		quid       	"3B117FBB00C9"
+		exportControl 	"Public"
+		logical_models 	(list unit_reference_list
+		    (object UseCase "Seleciona Conector"
+			quid       	"3B117D8C0057")
+		    (object UseCase "Apaga Conector"
+			quid       	"3B117DCB0057")
+		    (object UseCase "Muda LineColor Conector"
+			quid       	"3B117F020311")
+		    (object UseCase "Arrasta Ponto Base"
+			quid       	"3B1180E50153")
+		    (object UseCase "Abre Propriedades Conector"
+			quid       	"3B118111011B")
+		    (object Association "$UNNAMED$36"
+			quid       	"3B1180F70037"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$37"
+				quid       	"3B1180F7016D"
+				supplier   	"Arrasta Ponto Base"
+				quidu      	"3B1180E50153"
+				is_navigable 	TRUE)
+			    (object Role "$UNNAMED$38"
+				quid       	"3B1180F7016E"
+				supplier   	"Seleciona Conector"
+				quidu      	"3B117D8C0057")))
+		    (object Association "$UNNAMED$39"
+			quid       	"3B11811F0016"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$40"
+				quid       	"3B11811F0193"
+				supplier   	"Abre Propriedades Conector"
+				quidu      	"3B118111011B"
+				is_navigable 	TRUE)
+			    (object Role "$UNNAMED$41"
+				quid       	"3B11811F0194"
+				supplier   	"Seleciona Conector"
+				quidu      	"3B117D8C0057"))))
+		logical_presentations 	(list unit_reference_list
+		    (object UseCaseDiagram "Overview"
+			quid       	"3B1180BD0250"
+			title      	"Overview"
+			zoom       	100
+			max_height 	28350
+			max_width  	21600
+			origin_x   	0
+			origin_y   	0
+			items      	(list diagram_item_list
+			    (object UseCaseView "Apaga Conector" @30
+				location   	(1612, 1023)
+				label      	(object ItemLabel
+				    Parent_View 	@30
+				    location   	(1612, 1158)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	633
+				    justify    	0
+				    label      	"Apaga Conector")
+				quidu      	"3B117DCB0057"
+				autoResize 	TRUE)
+			    (object UseCaseView "Muda LineColor Conector" @31
+				location   	(1488, 403)
+				label      	(object ItemLabel
+				    Parent_View 	@31
+				    location   	(1488, 538)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	633
+				    justify    	0
+				    label      	"Muda LineColor Conector")
+				quidu      	"3B117F020311"
+				autoResize 	TRUE)
+			    (object ClassView "Class" "Usuario" @32
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(341, 248)
+				label      	(object ItemLabel
+				    Parent_View 	@32
+				    location   	(341, 405)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	327
+				    justify    	0
+				    label      	"Usuario")
+				icon       	"Actor"
+				quidu      	"3B117D580283"
+				annotation 	8
+				autoResize 	TRUE)
+			    (object UseCaseView "Arrasta Ponto Base" @33
+				location   	(1178, 1364)
+				label      	(object ItemLabel
+				    Parent_View 	@33
+				    location   	(1178, 1499)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	633
+				    justify    	0
+				    label      	"Arrasta Ponto Base")
+				quidu      	"3B1180E50153"
+				height     	112
+				autoResize 	TRUE)
+			    (object UseCaseView "Abre Propriedades Conector" @34
+				location   	(496, 1147)
+				label      	(object ItemLabel
+				    Parent_View 	@34
+				    location   	(496, 1282)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	633
+				    justify    	0
+				    label      	"Abre Propriedades Conector")
+				quidu      	"3B118111011B"
+				height     	112
+				autoResize 	TRUE)
+			    (object UseCaseView "Seleciona Conector" @35
+				location   	(868, 682)
+				label      	(object ItemLabel
+				    Parent_View 	@35
+				    location   	(868, 817)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	633
+				    justify    	0
+				    label      	"Seleciona Conector")
+				quidu      	"3B117D8C0057"
+				autoResize 	TRUE)
+			    (object AssociationViewNew "$UNNAMED$12" @36
+				location   	(1274, 866)
+				quidu      	"3B117E310361"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$14" @37
+					Parent_View 	@36
+					location   	(158, -95)
+					quidu      	"3B117E320092"
+					client     	@36
+					supplier   	@35
+					line_style 	0)
+				    (object RoleView "$UNNAMED$13" @38
+					Parent_View 	@36
+					location   	(158, -95)
+					quidu      	"3B117E320091"
+					client     	@36
+					supplier   	@30
+					line_style 	0)))
+			    (object AssociationViewNew "$UNNAMED$24" @39
+				location   	(1115, 569)
+				quidu      	"3B117F0F0035"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$26" @40
+					Parent_View 	@39
+					location   	(-373, 42)
+					quidu      	"3B117F0F01C7"
+					client     	@39
+					supplier   	@35
+					line_style 	0)
+				    (object RoleView "$UNNAMED$25" @41
+					Parent_View 	@39
+					location   	(-373, 42)
+					quidu      	"3B117F0F01C6"
+					client     	@39
+					supplier   	@31
+					line_style 	0)))
+			    (object AssociationViewNew "$UNNAMED$3" @42
+				location   	(598, 459)
+				quidu      	"3B117DAA028B"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$5" @43
+					Parent_View 	@42
+					location   	(71, -285)
+					quidu      	"3B117DAB0139"
+					client     	@42
+					supplier   	@32
+					line_style 	0)
+				    (object RoleView "$UNNAMED$4" @44
+					Parent_View 	@42
+					location   	(71, -285)
+					quidu      	"3B117DAB0138"
+					client     	@42
+					supplier   	@35
+					line_style 	0)))
+			    (object AssociationViewNew "$UNNAMED$36" @45
+				location   	(1043, 1073)
+				quidu      	"3B1180F70037"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$37" @46
+					Parent_View 	@45
+					location   	(206, 484)
+					quidu      	"3B1180F7016D"
+					client     	@45
+					supplier   	@33
+					line_style 	0)
+				    (object RoleView "$UNNAMED$38" @47
+					Parent_View 	@45
+					location   	(206, 484)
+					quidu      	"3B1180F7016E"
+					client     	@45
+					supplier   	@35
+					line_style 	0)))
+			    (object AssociationViewNew "$UNNAMED$39" @48
+				location   	(639, 965)
+				quidu      	"3B11811F0016"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$40" @49
+					Parent_View 	@48
+					location   	(-198, 376)
+					quidu      	"3B11811F0193"
+					client     	@48
+					supplier   	@34
+					line_style 	0)
+				    (object RoleView "$UNNAMED$41" @50
+					Parent_View 	@48
+					location   	(-198, 376)
+					quidu      	"3B11811F0194"
+					client     	@48
+					supplier   	@35
+					line_style 	0)))))))
+	    (object Class_Category "SelecaoGrupoObjetos"
+		quid       	"3B117FC90187"
+		exportControl 	"Public"
+		logical_models 	(list unit_reference_list
+		    (object UseCase "Seleciona Grupo Objetos"
+			quid       	"3B117DD90120")
+		    (object UseCase "Arrasta Grupo Objetos"
+			quid       	"3B117E190009")
+		    (object UseCase "Muda FillColor Grupo Objetos"
+			quid       	"3B1181710385")
+		    (object UseCase "Muda LineColor Grupo Objetos"
+			quid       	"3B118183016F")
+		    (object UseCase "Muda Fonte Grupo Objetos"
+			quid       	"3B1181930186")
+		    (object Association "$UNNAMED$42"
+			quid       	"3B1181800265"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$43"
+				quid       	"3B1181810099"
+				supplier   	"Muda FillColor Grupo Objetos"
+				quidu      	"3B1181710385"
+				is_navigable 	TRUE)
+			    (object Role "$UNNAMED$44"
+				quid       	"3B118181009A"
+				supplier   	"Seleciona Grupo Objetos"
+				quidu      	"3B117DD90120")))
+		    (object Association "$UNNAMED$45"
+			quid       	"3B11818F000D"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$46"
+				quid       	"3B11818F01C6"
+				supplier   	"Muda LineColor Grupo Objetos"
+				quidu      	"3B118183016F"
+				is_navigable 	TRUE)
+			    (object Role "$UNNAMED$47"
+				quid       	"3B11818F01C7"
+				supplier   	"Seleciona Grupo Objetos"
+				quidu      	"3B117DD90120")))
+		    (object Association "$UNNAMED$48"
+			quid       	"3B1181A0009E"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$49"
+				quid       	"3B1181A002E3"
+				supplier   	"Muda Fonte Grupo Objetos"
+				quidu      	"3B1181930186"
+				is_navigable 	TRUE)
+			    (object Role "$UNNAMED$50"
+				quid       	"3B1181A002E4"
+				supplier   	"Seleciona Grupo Objetos"
+				quidu      	"3B117DD90120"))))
+		logical_presentations 	(list unit_reference_list
+		    (object UseCaseDiagram "Overview"
+			quid       	"3B11815903C7"
+			title      	"Overview"
+			zoom       	100
+			max_height 	28350
+			max_width  	21600
+			origin_x   	0
+			origin_y   	0
+			items      	(list diagram_item_list
+			    (object ClassView "Class" "Usuario" @51
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(279, 217)
+				label      	(object ItemLabel
+				    Parent_View 	@51
+				    location   	(279, 374)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	327
+				    justify    	0
+				    label      	"Usuario")
+				icon       	"Actor"
+				quidu      	"3B117D580283"
+				annotation 	8
+				autoResize 	TRUE)
+			    (object UseCaseView "Arrasta Grupo Objetos" @52
+				location   	(682, 1209)
+				label      	(object ItemLabel
+				    Parent_View 	@52
+				    location   	(682, 1344)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	633
+				    justify    	0
+				    label      	"Arrasta Grupo Objetos")
+				quidu      	"3B117E190009"
+				autoResize 	TRUE)
+			    (object UseCaseView "Muda FillColor Grupo Objetos" @53
+				location   	(1271, 1116)
+				label      	(object ItemLabel
+				    Parent_View 	@53
+				    location   	(1271, 1251)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	633
+				    justify    	0
+				    label      	"Muda FillColor Grupo Objetos")
+				quidu      	"3B1181710385"
+				height     	112
+				autoResize 	TRUE)
+			    (object UseCaseView "Muda LineColor Grupo Objetos" @54
+				location   	(1581, 713)
+				label      	(object ItemLabel
+				    Parent_View 	@54
+				    location   	(1581, 848)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	633
+				    justify    	0
+				    label      	"Muda LineColor Grupo Objetos")
+				quidu      	"3B118183016F"
+				height     	112
+				autoResize 	TRUE)
+			    (object UseCaseView "Muda Fonte Grupo Objetos" @55
+				location   	(1395, 310)
+				label      	(object ItemLabel
+				    Parent_View 	@55
+				    location   	(1395, 445)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	633
+				    justify    	0
+				    label      	"Muda Fonte Grupo Objetos")
+				quidu      	"3B1181930186"
+				height     	112
+				autoResize 	TRUE)
+			    (object UseCaseView "Seleciona Grupo Objetos" @56
+				location   	(651, 620)
+				label      	(object ItemLabel
+				    Parent_View 	@56
+				    location   	(651, 755)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	633
+				    justify    	0
+				    label      	"Seleciona Grupo Objetos")
+				quidu      	"3B117DD90120"
+				autoResize 	TRUE)
+			    (object AssociationViewNew "$UNNAMED$6" @57
+				location   	(466, 421)
+				quidu      	"3B117E06007A"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$8" @58
+					Parent_View 	@57
+					location   	(63, -292)
+					quidu      	"3B117E060270"
+					client     	@57
+					supplier   	@51
+					line_style 	0)
+				    (object RoleView "$UNNAMED$7" @59
+					Parent_View 	@57
+					location   	(63, -292)
+					quidu      	"3B117E06026F"
+					client     	@57
+					supplier   	@56
+					line_style 	0)))
+			    (object AssociationViewNew "$UNNAMED$9" @60
+				location   	(666, 964)
+				quidu      	"3B117E2501A1"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$11" @61
+					Parent_View 	@60
+					location   	(-388, 530)
+					quidu      	"3B117E250383"
+					client     	@60
+					supplier   	@56
+					line_style 	0)
+				    (object RoleView "$UNNAMED$10" @62
+					Parent_View 	@60
+					location   	(-388, 530)
+					quidu      	"3B117E250382"
+					client     	@60
+					supplier   	@52
+					line_style 	0)))
+			    (object AssociationViewNew "$UNNAMED$42" @63
+				location   	(1023, 918)
+				quidu      	"3B1181800265"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$43" @64
+					Parent_View 	@63
+					location   	(186, 236)
+					quidu      	"3B1181810099"
+					client     	@63
+					supplier   	@53
+					line_style 	0)
+				    (object RoleView "$UNNAMED$44" @65
+					Parent_View 	@63
+					location   	(186, 236)
+					quidu      	"3B118181009A"
+					client     	@63
+					supplier   	@56
+					line_style 	0)))
+			    (object AssociationViewNew "$UNNAMED$45" @66
+				location   	(1115, 664)
+				quidu      	"3B11818F000D"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$46" @67
+					Parent_View 	@66
+					location   	(278, -18)
+					quidu      	"3B11818F01C6"
+					client     	@66
+					supplier   	@54
+					line_style 	0)
+				    (object RoleView "$UNNAMED$47" @68
+					Parent_View 	@66
+					location   	(278, -18)
+					quidu      	"3B11818F01C7"
+					client     	@66
+					supplier   	@56
+					line_style 	0)))
+			    (object AssociationViewNew "$UNNAMED$48" @69
+				location   	(916, 506)
+				quidu      	"3B1181A0009E"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$49" @70
+					Parent_View 	@69
+					location   	(79, -176)
+					quidu      	"3B1181A002E3"
+					client     	@69
+					supplier   	@55
+					line_style 	0)
+				    (object RoleView "$UNNAMED$50" @71
+					Parent_View 	@69
+					location   	(79, -176)
+					quidu      	"3B1181A002E4"
+					client     	@69
+					supplier   	@56
+					line_style 	0))))))))
+	logical_presentations 	(list unit_reference_list
+	    (object UseCaseDiagram "Main"
+		quid       	"3B116FB7027D"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list
+		    (object ClassView "Class" "Usuario" @72
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(806, 248)
+			label      	(object ItemLabel
+			    Parent_View 	@72
+			    location   	(806, 405)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	327
+			    justify    	0
+			    label      	"Usuario")
+			icon       	"Actor"
+			quidu      	"3B117D580283"
+			annotation 	8
+			autoResize 	TRUE)
+		    (object CategoryView "SelecaoConector" @73
+			location   	(837, 837)
+			label      	(object ItemLabel
+			    Parent_View 	@73
+			    location   	(659, 734)
+			    nlines     	2
+			    max_width  	356
+			    justify    	0
+			    label      	"SelecaoConector")
+			quidu      	"3B117FBB00C9"
+			width      	369
+			height     	219)
+		    (object CategoryView "SelecaoGrupoObjetos" @74
+			location   	(1395, 806)
+			label      	(object ItemLabel
+			    Parent_View 	@74
+			    location   	(1185, 684)
+			    nlines     	2
+			    max_width  	420
+			    justify    	0
+			    label      	"SelecaoGrupoObjetos")
+			quidu      	"3B117FC90187"
+			width      	432
+			height     	256)
+		    (object CategoryView "SelecaoObjeto" @75
+			location   	(341, 775)
+			label      	(object ItemLabel
+			    Parent_View 	@75
+			    location   	(197, 691)
+			    nlines     	2
+			    max_width  	288
+			    justify    	0
+			    label      	"SelecaoObjeto")
+			quidu      	"3B117FAD019B"
+			width      	300
+			height     	180)))))
+    root_category 	(object Class_Category "Logical View"
+	quid       	"3B116FB60181"
+	exportControl 	"Public"
+	global     	TRUE
+	subsystem  	"Component View"
+	quidu      	"3B116FB6019F"
+	logical_models 	(list unit_reference_list
+	    (object Class_Category "Janelas"
+		quid       	"3B1173B7009D"
+		exportControl 	"Public"
+		logical_models 	(list unit_reference_list
+		    (object Class "TfrmClassProperties"
+			quid       	"3B117BAB01D2")
+		    (object Class "TBase"
+			quid       	"3B17E97E007C"
+			stereotype 	"boundary")
+		    (object Class "TfrmObjectProperties"
+			quid       	"3B17E9860309")
+		    (object Class "TfrmMetodo"
+			quid       	"3B17E9A00266")
+		    (object Class "TfrmAtributo"
+			quid       	"3B17E9A90178"))
+		logical_presentations 	(list unit_reference_list))
+	    (object Class_Category "ProjetoBPR"
+		quid       	"3B1173BC038A"
+		exportControl 	"Public"
+		logical_models 	(list unit_reference_list)
+		logical_presentations 	(list unit_reference_list))
+	    (object Class_Category "CppBuilder"
+		quid       	"3B1179A40276"
+		exportControl 	"Public"
+		logical_models 	(list unit_reference_list)
+		logical_presentations 	(list unit_reference_list))
+	    (object Class_Category "Diagramador"
+		quid       	"3B1173CB024B"
+		exportControl 	"Public"
+		logical_models 	(list unit_reference_list
+		    (object Class "Diagrama"
+			quid       	"3B1175BD0215"
+			superclasses 	(list inheritance_relationship_list
+			    (object Inheritance_Relationship
+				quid       	"3B17EBE803D8"
+				supplier   	"ItemModelo"
+				quidu      	"3B17EBD50395"))
+			used_nodes 	(list uses_relationship_list
+			    (object Uses_Relationship
+				quid       	"3B117B9B008E"
+				supplier   	"FabricaControlador"
+				quidu      	"3B117B01030E")))
+		    (object Class "ListaEncadeadaConn"
+			quid       	"3B11760A025C")
+		    (object Class "ListaEncadeadaObj"
+			quid       	"3B1176120040")
+		    (object Class "TreeNodeData"
+			quid       	"3B1176260270")
+		    (object Class "NewClass"
+			quid       	"3B17E0B603B9")
+		    (object Class "Projeto"
+			quid       	"3B17E0D301C6")
+		    (object Class "ItemModelo"
+			quid       	"3B17EBD50395"
+			class_attributes 	(list class_attribute_list
+			    (object ClassAttribute "Parent"
+				quid       	"3B17EBFC019C"
+				type       	"ItemModelo")))
+		    (object Association "contém"
+			quid       	"3B117674029A"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$51"
+				quid       	"3B1176750115"
+				supplier   	"ListaEncadeadaConn"
+				quidu      	"3B11760A025C"
+				client_cardinality 	(value cardinality "1")
+				is_navigable 	TRUE)
+			    (object Role "$UNNAMED$52"
+				quid       	"3B1176750116"
+				supplier   	"Diagrama"
+				quidu      	"3B1175BD0215"
+				client_cardinality 	(value cardinality "1")
+				is_navigable 	TRUE)))
+		    (object Association "contém"
+			quid       	"3B117676027F"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$53"
+				quid       	"3B1176770014"
+				supplier   	"ListaEncadeadaObj"
+				quidu      	"3B1176120040"
+				client_cardinality 	(value cardinality "1")
+				is_navigable 	TRUE)
+			    (object Role "$UNNAMED$54"
+				quid       	"3B1176770015"
+				supplier   	"Diagrama"
+				quidu      	"3B1175BD0215"
+				client_cardinality 	(value cardinality "1")
+				is_navigable 	TRUE)))
+		    (object Association "$UNNAMED$55"
+			quid       	"3B1176FC01A5"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$56"
+				quid       	"3B1176FC030E"
+				supplier   	"Connector"
+				quidu      	"3B1176ED0045"
+				client_cardinality 	(value cardinality "n")
+				is_navigable 	TRUE)
+			    (object Role "$UNNAMED$57"
+				quid       	"3B1176FC030F"
+				supplier   	"ListaEncadeadaObj"
+				quidu      	"3B1176120040"
+				client_cardinality 	(value cardinality "1")
+				is_navigable 	TRUE)))
+		    (object Association "$UNNAMED$58"
+			quid       	"3B117716015D"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$59"
+				quid       	"3B1177160329"
+				supplier   	"Objeto"
+				quidu      	"3B1176E603A3"
+				client_cardinality 	(value cardinality "n")
+				is_navigable 	TRUE)
+			    (object Role "$UNNAMED$60"
+				quid       	"3B117716032A"
+				supplier   	"ListaEncadeadaConn"
+				quidu      	"3B11760A025C"
+				client_cardinality 	(value cardinality "1")
+				is_navigable 	TRUE)))
+		    (object Association "$UNNAMED$61"
+			quid       	"3B17EBB30287"
+			roles      	(list role_list
+			    (object Role "$UNNAMED$62"
+				quid       	"3B17EBB303C8"
+				supplier   	"Projeto"
+				quidu      	"3B17E0D301C6"
+				is_navigable 	TRUE
+				is_aggregate 	TRUE)
+			    (object Role "$UNNAMED$63"
+				quid       	"3B17EBB303C9"
+				supplier   	"Diagrama"
+				quidu      	"3B1175BD0215"
+				Containment 	"By Value"
+				is_navigable 	TRUE)))
+		    (object Class_Category "Objetos"
+			quid       	"3B1173D10380"
+			exportControl 	"Public"
+			logical_models 	(list unit_reference_list
+			    (object Class "Objeto"
+				quid       	"3B1176E603A3")
+			    (object Class "ObjClasse"
+				quid       	"3B11784602F4"
+				superclasses 	(list inheritance_relationship_list
+				    (object Inheritance_Relationship
+					quid       	"3B1179D90344"
+					supplier   	"Objeto"
+					quidu      	"3B1176E603A3")))
+			    (object Class "ObjAtor"
+				quid       	"3B117862038B"
+				superclasses 	(list inheritance_relationship_list
+				    (object Inheritance_Relationship
+					quid       	"3B1179DB0383"
+					supplier   	"Objeto"
+					quidu      	"3B1176E603A3")))
+			    (object Class "ObjComentario"
+				quid       	"3B11786901B4"
+				superclasses 	(list inheritance_relationship_list
+				    (object Inheritance_Relationship
+					quid       	"3B1179E20243"
+					supplier   	"Objeto"
+					quidu      	"3B1176E603A3")))
+			    (object Class "ObjConceito"
+				quid       	"3B1178790063"
+				superclasses 	(list inheritance_relationship_list
+				    (object Inheritance_Relationship
+					quid       	"3B1179E1004C"
+					supplier   	"Objeto"
+					quidu      	"3B1176E603A3")))
+			    (object Class "ObjEstado"
+				quid       	"3B117880024E"
+				superclasses 	(list inheritance_relationship_list
+				    (object Inheritance_Relationship
+					quid       	"3B1179E500A2"
+					supplier   	"Objeto"
+					quidu      	"3B1176E603A3")))
+			    (object Class "ObjEstadoFinalInicial"
+				quid       	"3B1178890192"
+				superclasses 	(list inheritance_relationship_list
+				    (object Inheritance_Relationship
+					quid       	"3B1179E7018C"
+					supplier   	"Objeto"
+					quidu      	"3B1176E603A3")))
+			    (object Association "$UNNAMED$64"
+				quid       	"3B117B5E01D1"
+				roles      	(list role_list
+				    (object Role "$UNNAMED$65"
+					quid       	"3B117B5E0393"
+					supplier   	"FormaClasse"
+					quidu      	"3B117B3C0091"
+					is_navigable 	TRUE)
+				    (object Role "$UNNAMED$66"
+					quid       	"3B117B5E0394"
+					supplier   	"ObjClasse"
+					quidu      	"3B11784602F4")))
+			    (object Association "$UNNAMED$67"
+				quid       	"3B117B870356"
+				roles      	(list role_list
+				    (object Role "$UNNAMED$68"
+					quid       	"3B117B8A0347"
+					supplier   	"ObjClasse"
+					quidu      	"3B11784602F4"
+					is_navigable 	TRUE)
+				    (object Role "$UNNAMED$69"
+					quid       	"3B117B8A0348"
+					supplier   	"ListaEncadeadaObj"
+					quidu      	"3B1176120040"
+					is_navigable 	TRUE)))
+			    (object Association "$UNNAMED$70"
+				quid       	"3B117BC1033C"
+				roles      	(list role_list
+				    (object Role "$UNNAMED$71"
+					quid       	"3B117BC20102"
+					supplier   	"TfrmClassProperties"
+					quidu      	"3B117BAB01D2"
+					is_navigable 	TRUE)
+				    (object Role "$UNNAMED$72"
+					quid       	"3B117BC2010C"
+					supplier   	"ControladorObjetoClasse"
+					quidu      	"3B117A790091")))
+			    (object Association "$UNNAMED$73"
+				quid       	"3B117BE401A1"
+				roles      	(list role_list
+				    (object Role "$UNNAMED$74"
+					quid       	"3B117BE40300"
+					supplier   	"Atributo"
+					quidu      	"3B117A0A01C8"
+					client_cardinality 	(value cardinality "n")
+					is_navigable 	TRUE)
+				    (object Role "$UNNAMED$75"
+					quid       	"3B117BE40301"
+					supplier   	"ObjClasse"
+					quidu      	"3B11784602F4"
+					client_cardinality 	(value cardinality "1")
+					is_navigable 	TRUE)))
+			    (object Association "$UNNAMED$76"
+				quid       	"3B117BE60050"
+				roles      	(list role_list
+				    (object Role "$UNNAMED$77"
+					quid       	"3B117BE601E0"
+					supplier   	"Metodo"
+					quidu      	"3B117A1000D6"
+					client_cardinality 	(value cardinality "n")
+					is_navigable 	TRUE)
+				    (object Role "$UNNAMED$78"
+					quid       	"3B117BE601E1"
+					supplier   	"ObjClasse"
+					quidu      	"3B11784602F4"
+					client_cardinality 	(value cardinality "1")
+					is_navigable 	TRUE)))
+			    (object Class_Category "pItemClasse"
+				quid       	"3B1178720211"
+				exportControl 	"Public"
+				logical_models 	(list unit_reference_list
+				    (object Class "ItemClasse"
+					quid       	"3B1179F4014E")
+				    (object Class "Atributo"
+					quid       	"3B117A0A01C8"
+					superclasses 	(list inheritance_relationship_list
+					    (object Inheritance_Relationship
+						quid       	"3B117A340182"
+						supplier   	"ItemClasse"
+						quidu      	"3B1179F4014E")))
+				    (object Class "Metodo"
+					quid       	"3B117A1000D6"
+					superclasses 	(list inheritance_relationship_list
+					    (object Inheritance_Relationship
+						quid       	"3B117A3800B6"
+						supplier   	"ItemClasse"
+						quidu      	"3B1179F4014E"))))
+				logical_presentations 	(list unit_reference_list
+				    (object ClassDiagram "Overview"
+					quid       	"3B117A220209"
+					title      	"Overview"
+					zoom       	100
+					max_height 	28350
+					max_width  	21600
+					origin_x   	0
+					origin_y   	0
+					items      	(list diagram_item_list
+					    (object ClassView "Class" "ItemClasse" @76
+						IncludeAttribute 	TRUE
+						IncludeOperation 	TRUE
+						location   	(372, 93)
+						label      	(object ItemLabel
+						    Parent_View 	@76
+						    location   	(256, 44)
+						    nlines     	1
+						    max_width  	231
+						    justify    	0
+						    label      	"ItemClasse")
+						quidu      	"3B1179F4014E"
+						width      	250
+						height     	122
+						annotation 	8
+						autoResize 	TRUE)
+					    (object ClassView "Class" "Metodo" @77
+						IncludeAttribute 	TRUE
+						IncludeOperation 	TRUE
+						location   	(589, 403)
+						label      	(object ItemLabel
+						    Parent_View 	@77
+						    location   	(502, 354)
+						    nlines     	1
+						    max_width  	172
+						    justify    	0
+						    label      	"Metodo")
+						quidu      	"3B117A1000D6"
+						width      	186
+						height     	122
+						annotation 	8
+						autoResize 	TRUE)
+					    (object ClassView "Class" "Atributo" @78
+						IncludeAttribute 	TRUE
+						IncludeOperation 	TRUE
+						location   	(155, 403)
+						label      	(object ItemLabel
+						    Parent_View 	@78
+						    location   	(68, 354)
+						    nlines     	1
+						    max_width  	172
+						    justify    	0
+						    label      	"Atributo")
+						quidu      	"3B117A0A01C8"
+						width      	186
+						height     	122
+						annotation 	8
+						autoResize 	TRUE)
+					    (object InheritView "" @79
+						quidu      	"3B117A340182"
+						client     	@78
+						supplier   	@76
+						line_style 	0)
+					    (object InheritView "" @80
+						quidu      	"3B117A3800B6"
+						client     	@77
+						supplier   	@76
+						line_style 	0)))))
+			    (object Class_Category "View"
+				quid       	"3B17E28003A3"
+				exportControl 	"Public"
+				logical_models 	(list unit_reference_list
+				    (object Class "ViewObjeto"
+					quid       	"3B17E2880142"))
+				logical_presentations 	(list unit_reference_list)))
+			logical_presentations 	(list unit_reference_list
+			    (object ClassDiagram "Overview"
+				quid       	"3B117996022F"
+				title      	"Overview"
+				zoom       	100
+				max_height 	28350
+				max_width  	21600
+				origin_x   	0
+				origin_y   	0
+				items      	(list diagram_item_list
+				    (object ClassView "Class" "Objeto" @81
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(1023, 93)
+					label      	(object ItemLabel
+					    Parent_View 	@81
+					    location   	(881, 43)
+					    nlines     	1
+					    max_width  	283
+					    justify    	0
+					    label      	"Objeto")
+					quidu      	"3B1176E603A3"
+					width      	307
+					height     	125
+					annotation 	8
+					autoResize 	TRUE)
+				    (object ClassView "Class" "ObjClasse" @82
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(186, 527)
+					label      	(object ItemLabel
+					    Parent_View 	@82
+					    location   	(73, 478)
+					    nlines     	1
+					    max_width  	225
+					    justify    	0
+					    label      	"ObjClasse")
+					quidu      	"3B11784602F4"
+					width      	244
+					height     	122
+					annotation 	8
+					autoResize 	TRUE)
+				    (object ClassView "Class" "ObjAtor" @83
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(434, 527)
+					label      	(object ItemLabel
+					    Parent_View 	@83
+					    location   	(348, 478)
+					    nlines     	1
+					    max_width  	170
+					    justify    	0
+					    label      	"ObjAtor")
+					quidu      	"3B117862038B"
+					width      	184
+					height     	122
+					annotation 	8
+					autoResize 	TRUE)
+				    (object ClassView "Class" "ObjComentario" @84
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(1023, 527)
+					label      	(object ItemLabel
+					    Parent_View 	@84
+					    location   	(871, 478)
+					    nlines     	1
+					    max_width  	303
+					    justify    	0
+					    label      	"ObjComentario")
+					quidu      	"3B11786901B4"
+					width      	328
+					height     	122
+					annotation 	8
+					autoResize 	TRUE)
+				    (object ClassView "Class" "ObjConceito" @85
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(713, 527)
+					label      	(object ItemLabel
+					    Parent_View 	@85
+					    location   	(589, 478)
+					    nlines     	1
+					    max_width  	247
+					    justify    	0
+					    label      	"ObjConceito")
+					quidu      	"3B1178790063"
+					width      	268
+					height     	122
+					annotation 	8
+					autoResize 	TRUE)
+				    (object ClassView "Class" "ObjEstado" @86
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(1333, 527)
+					label      	(object ItemLabel
+					    Parent_View 	@86
+					    location   	(1220, 478)
+					    nlines     	1
+					    max_width  	225
+					    justify    	0
+					    label      	"ObjEstado")
+					quidu      	"3B117880024E"
+					width      	244
+					height     	122
+					annotation 	8
+					autoResize 	TRUE)
+				    (object ClassView "Class" "ObjEstadoFinalInicial" @87
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(1705, 527)
+					label      	(object ItemLabel
+					    Parent_View 	@87
+					    location   	(1495, 478)
+					    nlines     	1
+					    max_width  	418
+					    justify    	0
+					    label      	"ObjEstadoFinalInicial")
+					quidu      	"3B1178890192"
+					width      	452
+					height     	122
+					annotation 	8
+					autoResize 	TRUE)
+				    (object InheritView "" @88
+					quidu      	"3B1179D90344"
+					client     	@82
+					supplier   	@81
+					line_style 	0)
+				    (object InheritView "" @89
+					quidu      	"3B1179DB0383"
+					client     	@83
+					supplier   	@81
+					line_style 	0)
+				    (object InheritView "" @90
+					quidu      	"3B1179E1004C"
+					client     	@85
+					supplier   	@81
+					line_style 	0)
+				    (object InheritView "" @91
+					quidu      	"3B1179E20243"
+					client     	@84
+					supplier   	@81
+					line_style 	0)
+				    (object InheritView "" @92
+					quidu      	"3B1179E500A2"
+					client     	@86
+					supplier   	@81
+					line_style 	0)
+				    (object InheritView "" @93
+					quidu      	"3B1179E7018C"
+					client     	@87
+					supplier   	@81
+					line_style 	0)))
+			    (object ClassDiagram "OverviewClasse"
+				quid       	"3B117A5F01CA"
+				title      	"OverviewClasse"
+				zoom       	100
+				max_height 	28350
+				max_width  	21600
+				origin_x   	0
+				origin_y   	0
+				items      	(list diagram_item_list
+				    (object ClassView "Class" "Objeto" @94
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(372, 155)
+					label      	(object ItemLabel
+					    Parent_View 	@94
+					    location   	(288, 106)
+					    nlines     	1
+					    max_width  	166
+					    justify    	0
+					    label      	"Objeto")
+					quidu      	"3B1176E603A3"
+					height     	122
+					annotation 	8
+					autoResize 	TRUE)
+				    (object ClassView "Class" "FabricaControlador" @95
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(1457, 527)
+					label      	(object ItemLabel
+					    Parent_View 	@95
+					    location   	(1268, 454)
+					    nlines     	1
+					    max_width  	377
+					    justify    	0
+					    label      	"FabricaControlador")
+					quidu      	"3B117B01030E"
+					width      	408
+					height     	170
+					annotation 	8
+					autoResize 	TRUE)
+				    (object ClassView "Class" "Diagrama" @96
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(1457, 124)
+					label      	(object ItemLabel
+					    Parent_View 	@96
+					    location   	(1297, 51)
+					    nlines     	1
+					    max_width  	318
+					    justify    	0
+					    label      	"Diagrama")
+					quidu      	"3B1175BD0215"
+					width      	344
+					height     	170
+					annotation 	8
+					autoResize 	TRUE)
+				    (object UsesView "" @97
+					quidu      	"3B117B9B008E"
+					client     	@96
+					supplier   	@95
+					line_style 	0)
+				    (object ClassView "Class" "TfrmClassProperties" @98
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(1457, 1395)
+					label      	(object ItemLabel
+					    Parent_View 	@98
+					    location   	(1257, 1322)
+					    nlines     	1
+					    max_width  	399
+					    justify    	0
+					    label      	"TfrmClassProperties")
+					quidu      	"3B117BAB01D2"
+					width      	432
+					height     	170
+					annotation 	8
+					autoResize 	TRUE)
+				    (object ClassView "Class" "ControladorObjetoClasse" @99
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(1457, 1023)
+					label      	(object ItemLabel
+					    Parent_View 	@99
+					    location   	(1218, 950)
+					    nlines     	1
+					    max_width  	477
+					    justify    	0
+					    label      	"ControladorObjetoClasse")
+					quidu      	"3B117A790091"
+					width      	516
+					height     	170
+					annotation 	8
+					autoResize 	TRUE)
+				    (object UsesView "" @100
+					quidu      	"3B117B14012A"
+					client     	@95
+					supplier   	@99
+					line_style 	0)
+				    (object AssociationViewNew "$UNNAMED$70" @101
+					location   	(1457, 1208)
+					quidu      	"3B117BC1033C"
+					roleview_list 	(list RoleViews
+					    (object RoleView "$UNNAMED$71" @102
+						Parent_View 	@101
+						location   	(0, -63)
+						quidu      	"3B117BC20102"
+						client     	@101
+						supplier   	@98
+						line_style 	0)
+					    (object RoleView "$UNNAMED$72" @103
+						Parent_View 	@101
+						location   	(0, -63)
+						quidu      	"3B117BC2010C"
+						client     	@101
+						supplier   	@99
+						line_style 	0)))
+				    (object ClassView "Class" "FormaClasse" @104
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(806, 527)
+					label      	(object ItemLabel
+					    Parent_View 	@104
+					    location   	(664, 454)
+					    nlines     	1
+					    max_width  	283
+					    justify    	0
+					    label      	"FormaClasse")
+					quidu      	"3B117B3C0091"
+					width      	306
+					height     	170
+					annotation 	8
+					autoResize 	TRUE)
+				    (object ClassView "Class" "ListaEncadeadaObj" @105
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(775, 124)
+					label      	(object ItemLabel
+					    Parent_View 	@105
+					    location   	(584, 51)
+					    nlines     	1
+					    max_width  	381
+					    justify    	0
+					    label      	"ListaEncadeadaObj")
+					quidu      	"3B1176120040"
+					width      	412
+					height     	170
+					annotation 	8
+					autoResize 	TRUE)
+				    (object AssociationViewNew "contém" @106
+					location   	(1132, 124)
+					label      	(object SegLabel @107
+					    Parent_View 	@106
+					    location   	(1132, 97)
+					    font       	(object Font
+						size       	10
+						face       	"Arial"
+						bold       	FALSE
+						italics    	TRUE
+						underline  	FALSE
+						strike     	FALSE
+						color      	0
+						default_color 	TRUE)
+					    anchor     	1
+					    anchor_loc 	1
+					    nlines     	1
+					    max_width  	175
+					    justify    	0
+					    label      	"contém"
+					    pctDist    	0.500000
+					    height     	28
+					    orientation 	0)
+					quidu      	"3B117676027F"
+					roleview_list 	(list RoleViews
+					    (object RoleView "$UNNAMED$54" @108
+						Parent_View 	@106
+						location   	(78, -62)
+						quidu      	"3B1176770015"
+						client     	@106
+						supplier   	@96
+						line_style 	0
+						label      	(object SegLabel @109
+						    Parent_View 	@108
+						    location   	(1236, 178)
+						    anchor     	2
+						    anchor_loc 	1
+						    nlines     	1
+						    max_width  	15
+						    justify    	0
+						    label      	"1"
+						    pctDist    	0.690789
+						    height     	54
+						    orientation 	1))
+					    (object RoleView "$UNNAMED$53" @110
+						Parent_View 	@106
+						location   	(78, -62)
+						quidu      	"3B1176770014"
+						client     	@106
+						supplier   	@105
+						line_style 	0
+						label      	(object SegLabel @111
+						    Parent_View 	@110
+						    location   	(1022, 178)
+						    anchor     	2
+						    anchor_loc 	1
+						    nlines     	1
+						    max_width  	15
+						    justify    	0
+						    label      	"1"
+						    pctDist    	0.735099
+						    height     	54
+						    orientation 	0))))
+				    (object ClassView "Class" "Atributo" @112
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(186, 961)
+					label      	(object ItemLabel
+					    Parent_View 	@112
+					    location   	(50, 888)
+					    nlines     	1
+					    max_width  	271
+					    justify    	0
+					    label      	"Atributo")
+					quidu      	"3B117A0A01C8"
+					width      	294
+					height     	170
+					annotation 	8
+					autoResize 	TRUE)
+				    (object ClassView "Class" "Metodo" @113
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(558, 961)
+					label      	(object ItemLabel
+					    Parent_View 	@113
+					    location   	(422, 888)
+					    nlines     	1
+					    max_width  	271
+					    justify    	0
+					    label      	"Metodo")
+					quidu      	"3B117A1000D6"
+					width      	294
+					height     	170
+					annotation 	8
+					autoResize 	TRUE)
+				    (object ClassView "Class" "ObjClasse" @114
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(372, 527)
+					label      	(object ItemLabel
+					    Parent_View 	@114
+					    location   	(259, 478)
+					    nlines     	1
+					    max_width  	225
+					    justify    	0
+					    label      	"ObjClasse")
+					quidu      	"3B11784602F4"
+					width      	244
+					height     	122
+					annotation 	8
+					autoResize 	TRUE)
+				    (object InheritView "" @115
+					quidu      	"3B1179D90344"
+					client     	@114
+					supplier   	@94
+					line_style 	0)
+				    (object AssociationViewNew "$UNNAMED$64" @116
+					location   	(573, 527)
+					quidu      	"3B117B5E01D1"
+					roleview_list 	(list RoleViews
+					    (object RoleView "$UNNAMED$65" @117
+						Parent_View 	@116
+						location   	(263, 0)
+						quidu      	"3B117B5E0393"
+						client     	@116
+						supplier   	@104
+						line_style 	0)
+					    (object RoleView "$UNNAMED$66" @118
+						Parent_View 	@116
+						location   	(263, 0)
+						quidu      	"3B117B5E0394"
+						client     	@116
+						supplier   	@114
+						line_style 	0)))
+				    (object AssociationViewNew "$UNNAMED$67" @119
+					location   	(559, 337)
+					quidu      	"3B117B870356"
+					roleview_list 	(list RoleViews
+					    (object RoleView "$UNNAMED$68" @120
+						Parent_View 	@119
+						location   	(-185, 120)
+						quidu      	"3B117B8A0347"
+						client     	@119
+						supplier   	@114
+						line_style 	0)
+					    (object RoleView "$UNNAMED$69" @121
+						Parent_View 	@119
+						location   	(-185, 120)
+						quidu      	"3B117B8A0348"
+						client     	@119
+						supplier   	@105
+						line_style 	0)))
+				    (object AssociationViewNew "$UNNAMED$73" @122
+					location   	(282, 731)
+					quidu      	"3B117BE401A1"
+					roleview_list 	(list RoleViews
+					    (object RoleView "$UNNAMED$74" @123
+						Parent_View 	@122
+						location   	(65, -44)
+						quidu      	"3B117BE40300"
+						client     	@122
+						supplier   	@112
+						line_style 	0
+						label      	(object SegLabel @124
+						    Parent_View 	@123
+						    location   	(215, 818)
+						    anchor     	2
+						    anchor_loc 	1
+						    nlines     	1
+						    max_width  	15
+						    justify    	0
+						    label      	"*"
+						    pctDist    	0.675962
+						    height     	29
+						    orientation 	1))
+					    (object RoleView "$UNNAMED$75" @125
+						Parent_View 	@122
+						location   	(65, -44)
+						quidu      	"3B117BE40301"
+						client     	@122
+						supplier   	@114
+						line_style 	0
+						label      	(object SegLabel @126
+						    Parent_View 	@125
+						    location   	(298, 625)
+						    anchor     	2
+						    anchor_loc 	1
+						    nlines     	1
+						    max_width  	15
+						    justify    	0
+						    label      	"1"
+						    pctDist    	0.668135
+						    height     	28
+						    orientation 	0))))
+				    (object AssociationViewNew "$UNNAMED$76" @127
+					location   	(458, 731)
+					quidu      	"3B117BE60050"
+					roleview_list 	(list RoleViews
+					    (object RoleView "$UNNAMED$77" @128
+						Parent_View 	@127
+						location   	(241, -44)
+						quidu      	"3B117BE601E0"
+						client     	@127
+						supplier   	@113
+						line_style 	0
+						label      	(object SegLabel @129
+						    Parent_View 	@128
+						    location   	(531, 841)
+						    anchor     	2
+						    anchor_loc 	1
+						    nlines     	1
+						    max_width  	15
+						    justify    	0
+						    label      	"*"
+						    pctDist    	0.816843
+						    height     	24
+						    orientation 	0))
+					    (object RoleView "$UNNAMED$78" @130
+						Parent_View 	@127
+						location   	(241, -44)
+						quidu      	"3B117BE601E1"
+						client     	@127
+						supplier   	@114
+						line_style 	0
+						label      	(object SegLabel @131
+						    Parent_View 	@130
+						    location   	(454, 617)
+						    anchor     	2
+						    anchor_loc 	1
+						    nlines     	1
+						    max_width  	15
+						    justify    	0
+						    label      	"1"
+						    pctDist    	0.704841
+						    height     	41
+						    orientation 	1))))))))
+		    (object Class_Category "Conectores"
+			quid       	"3B1173DA03E7"
+			exportControl 	"Public"
+			logical_models 	(list unit_reference_list
+			    (object Class "Connector"
+				quid       	"3B1176ED0045")
+			    (object Class "ConnAgragacao"
+				quid       	"3B1178BB00E0"
+				superclasses 	(list inheritance_relationship_list
+				    (object Inheritance_Relationship
+					quid       	"3B11796A0019"
+					supplier   	"Connector"
+					quidu      	"3B1176ED0045")))
+			    (object Class "ConnAssociacao"
+				quid       	"3B1178C2039D"
+				superclasses 	(list inheritance_relationship_list
+				    (object Inheritance_Relationship
+					quid       	"3B11796B0364"
+					supplier   	"Connector"
+					quidu      	"3B1176ED0045")))
+			    (object Class "ConnAssociativo"
+				quid       	"3B1178C40300"
+				superclasses 	(list inheritance_relationship_list
+				    (object Inheritance_Relationship
+					quid       	"3B11796D030D"
+					supplier   	"Connector"
+					quidu      	"3B1176ED0045")))
+			    (object Class "ConnDependencia"
+				quid       	"3B1178C60335"
+				superclasses 	(list inheritance_relationship_list
+				    (object Inheritance_Relationship
+					quid       	"3B11796F01B1"
+					supplier   	"Connector"
+					quidu      	"3B1176ED0045")))
+			    (object Class "ConnHeranca"
+				quid       	"3B1178C80139"
+				superclasses 	(list inheritance_relationship_list
+				    (object Inheritance_Relationship
+					quid       	"3B11797A0149"
+					supplier   	"Connector"
+					quidu      	"3B1176ED0045")))
+			    (object Class "ConnQuebrado"
+				quid       	"3B1178CA00AF"
+				superclasses 	(list inheritance_relationship_list
+				    (object Inheritance_Relationship
+					quid       	"3B11797C02C8"
+					supplier   	"Connector"
+					quidu      	"3B1176ED0045")))
+			    (object Class "ConnRetaBola"
+				quid       	"3B1179040121"
+				superclasses 	(list inheritance_relationship_list
+				    (object Inheritance_Relationship
+					quid       	"3B11797500C9"
+					supplier   	"Connector"
+					quidu      	"3B1176ED0045"))))
+			logical_presentations 	(list unit_reference_list
+			    (object ClassDiagram "Overview"
+				quid       	"3B11793602FA"
+				title      	"Overview"
+				zoom       	80
+				max_height 	28350
+				max_width  	21600
+				origin_x   	0
+				origin_y   	0
+				items      	(list diagram_item_list
+				    (object ClassView "Class" "Connector" @132
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(1333, 155)
+					label      	(object ItemLabel
+					    Parent_View 	@132
+					    location   	(1196, 105)
+					    nlines     	1
+					    max_width  	273
+					    justify    	0
+					    label      	"Connector")
+					quidu      	"3B1176ED0045"
+					width      	296
+					height     	124
+					annotation 	8
+					autoResize 	TRUE)
+				    (object ClassView "Class" "ConnAgragacao" @133
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(186, 682)
+					label      	(object ItemLabel
+					    Parent_View 	@133
+					    location   	(25, 633)
+					    nlines     	1
+					    max_width  	320
+					    justify    	0
+					    label      	"ConnAgragacao")
+					quidu      	"3B1178BB00E0"
+					width      	346
+					height     	122
+					annotation 	8
+					autoResize 	TRUE)
+				    (object ClassView "Class" "ConnAssociacao" @134
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(558, 682)
+					label      	(object ItemLabel
+					    Parent_View 	@134
+					    location   	(388, 633)
+					    nlines     	1
+					    max_width  	338
+					    justify    	0
+					    label      	"ConnAssociacao")
+					quidu      	"3B1178C2039D"
+					width      	366
+					height     	122
+					annotation 	8
+					autoResize 	TRUE)
+				    (object ClassView "Class" "ConnAssociativo" @135
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(930, 682)
+					label      	(object ItemLabel
+					    Parent_View 	@135
+					    location   	(766, 633)
+					    nlines     	1
+					    max_width  	327
+					    justify    	0
+					    label      	"ConnAssociativo")
+					quidu      	"3B1178C40300"
+					width      	354
+					height     	122
+					annotation 	8
+					autoResize 	TRUE)
+				    (object ClassView "Class" "ConnDependencia" @136
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(1333, 682)
+					label      	(object ItemLabel
+					    Parent_View 	@136
+					    location   	(1152, 633)
+					    nlines     	1
+					    max_width  	360
+					    justify    	0
+					    label      	"ConnDependencia")
+					quidu      	"3B1178C60335"
+					width      	390
+					height     	122
+					annotation 	8
+					autoResize 	TRUE)
+				    (object ClassView "Class" "ConnHeranca" @137
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(2046, 682)
+					label      	(object ItemLabel
+					    Parent_View 	@137
+					    location   	(1905, 633)
+					    nlines     	1
+					    max_width  	281
+					    justify    	0
+					    label      	"ConnHeranca")
+					quidu      	"3B1178C80139"
+					width      	304
+					height     	122
+					annotation 	8
+					autoResize 	TRUE)
+				    (object ClassView "Class" "ConnQuebrado" @138
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(2387, 682)
+					label      	(object ItemLabel
+					    Parent_View 	@138
+					    location   	(2235, 633)
+					    nlines     	1
+					    max_width  	303
+					    justify    	0
+					    label      	"ConnQuebrado")
+					quidu      	"3B1178CA00AF"
+					width      	328
+					height     	122
+					annotation 	8
+					autoResize 	TRUE)
+				    (object ClassView "Class" "ConnRetaBola" @139
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(1705, 682)
+					label      	(object ItemLabel
+					    Parent_View 	@139
+					    location   	(1560, 633)
+					    nlines     	1
+					    max_width  	288
+					    justify    	0
+					    label      	"ConnRetaBola")
+					quidu      	"3B1179040121"
+					width      	312
+					height     	122
+					annotation 	8
+					autoResize 	TRUE)
+				    (object InheritView "" @140
+					quidu      	"3B11796A0019"
+					client     	@133
+					supplier   	@132
+					line_style 	0)
+				    (object InheritView "" @141
+					quidu      	"3B11796B0364"
+					client     	@134
+					supplier   	@132
+					line_style 	0)
+				    (object InheritView "" @142
+					quidu      	"3B11796D030D"
+					client     	@135
+					supplier   	@132
+					line_style 	0)
+				    (object InheritView "" @143
+					quidu      	"3B11796F01B1"
+					client     	@136
+					supplier   	@132
+					line_style 	0)
+				    (object InheritView "" @144
+					quidu      	"3B11797500C9"
+					client     	@139
+					supplier   	@132
+					line_style 	0)
+				    (object InheritView "" @145
+					quidu      	"3B11797A0149"
+					client     	@137
+					supplier   	@132
+					line_style 	0)
+				    (object InheritView "" @146
+					quidu      	"3B11797C02C8"
+					client     	@138
+					supplier   	@132
+					line_style 	0)))))
+		    (object Class_Category "Pintor"
+			quid       	"3B1173E002AF"
+			exportControl 	"Public"
+			logical_models 	(list unit_reference_list
+			    (object Class_Category "PartesConector"
+				quid       	"3B117447018B"
+				exportControl 	"Public"
+				logical_models 	(list unit_reference_list
+				    (object Class "PontaCircular"
+					quid       	"3B1174A40261"
+					superclasses 	(list inheritance_relationship_list
+					    (object Inheritance_Relationship
+						quid       	"3B1175920372"
+						supplier   	"ParteConector"
+						quidu      	"3B11738D02B0")))
+				    (object Class "PontaDiamante"
+					quid       	"3B1174B001D2"
+					superclasses 	(list inheritance_relationship_list
+					    (object Inheritance_Relationship
+						quid       	"3B1175940162"
+						supplier   	"ParteConector"
+						quidu      	"3B11738D02B0")))
+				    (object Class "PontaFlecha"
+					quid       	"3B1174BC017F"
+					superclasses 	(list inheritance_relationship_list
+					    (object Inheritance_Relationship
+						quid       	"3B11759B016C"
+						supplier   	"ParteConector"
+						quidu      	"3B11738D02B0")))
+				    (object Class "PontaTriangular"
+					quid       	"3B1174C40311"
+					superclasses 	(list inheritance_relationship_list
+					    (object Inheritance_Relationship
+						quid       	"3B11759D0179"
+						supplier   	"ParteConector"
+						quidu      	"3B11738D02B0")))
+				    (object Class "RetaBasica"
+					quid       	"3B1174D10021"
+					superclasses 	(list inheritance_relationship_list
+					    (object Inheritance_Relationship
+						quid       	"3B11759F00DB"
+						supplier   	"ParteConector"
+						quidu      	"3B11738D02B0")))
+				    (object Class "RetaQuebrada"
+					quid       	"3B1174D90235"
+					superclasses 	(list inheritance_relationship_list
+					    (object Inheritance_Relationship
+						quid       	"3B1175A10156"
+						supplier   	"ParteConector"
+						quidu      	"3B11738D02B0"))))
+				logical_presentations 	(list unit_reference_list
+				    (object ClassDiagram "Overview"
+					quid       	"3B11756F0209"
+					title      	"Overview"
+					zoom       	100
+					max_height 	28350
+					max_width  	21600
+					origin_x   	0
+					origin_y   	0
+					items      	(list diagram_item_list
+					    (object ClassView "Class" "PontaCircular" @147
+						IncludeAttribute 	TRUE
+						IncludeOperation 	TRUE
+						location   	(186, 496)
+						label      	(object ItemLabel
+						    Parent_View 	@147
+						    location   	(45, 447)
+						    nlines     	1
+						    max_width  	281
+						    justify    	0
+						    label      	"PontaCircular")
+						quidu      	"3B1174A40261"
+						width      	304
+						height     	122
+						annotation 	8
+						autoResize 	TRUE)
+					    (object ClassView "Class" "PontaDiamante" @148
+						IncludeAttribute 	TRUE
+						IncludeOperation 	TRUE
+						location   	(527, 496)
+						label      	(object ItemLabel
+						    Parent_View 	@148
+						    location   	(374, 447)
+						    nlines     	1
+						    max_width  	305
+						    justify    	0
+						    label      	"PontaDiamante")
+						quidu      	"3B1174B001D2"
+						width      	330
+						height     	122
+						annotation 	8
+						autoResize 	TRUE)
+					    (object ClassView "Class" "PontaFlecha" @149
+						IncludeAttribute 	TRUE
+						IncludeOperation 	TRUE
+						location   	(868, 496)
+						label      	(object ItemLabel
+						    Parent_View 	@149
+						    location   	(736, 447)
+						    nlines     	1
+						    max_width  	262
+						    justify    	0
+						    label      	"PontaFlecha")
+						quidu      	"3B1174BC017F"
+						width      	284
+						height     	122
+						annotation 	8
+						autoResize 	TRUE)
+					    (object ClassView "Class" "PontaTriangular" @150
+						IncludeAttribute 	TRUE
+						IncludeOperation 	TRUE
+						location   	(1209, 496)
+						label      	(object ItemLabel
+						    Parent_View 	@150
+						    location   	(1054, 447)
+						    nlines     	1
+						    max_width  	308
+						    justify    	0
+						    label      	"PontaTriangular")
+						quidu      	"3B1174C40311"
+						width      	334
+						height     	122
+						annotation 	8
+						autoResize 	TRUE)
+					    (object ClassView "Class" "RetaBasica" @151
+						IncludeAttribute 	TRUE
+						IncludeOperation 	TRUE
+						location   	(1519, 496)
+						label      	(object ItemLabel
+						    Parent_View 	@151
+						    location   	(1395, 447)
+						    nlines     	1
+						    max_width  	246
+						    justify    	0
+						    label      	"RetaBasica")
+						quidu      	"3B1174D10021"
+						width      	266
+						height     	122
+						annotation 	8
+						autoResize 	TRUE)
+					    (object ClassView "Class" "RetaQuebrada" @152
+						IncludeAttribute 	TRUE
+						IncludeOperation 	TRUE
+						location   	(1829, 496)
+						label      	(object ItemLabel
+						    Parent_View 	@152
+						    location   	(1684, 447)
+						    nlines     	1
+						    max_width  	288
+						    justify    	0
+						    label      	"RetaQuebrada")
+						quidu      	"3B1174D90235"
+						width      	312
+						height     	122
+						annotation 	8
+						autoResize 	TRUE)))))
+			    (object Class_Category "PartesObjeto"
+				quid       	"3B11744F00C4"
+				exportControl 	"Public"
+				logical_models 	(list unit_reference_list
+				    (object Class "FormaAtor"
+					quid       	"3B1174EC0228"
+					superclasses 	(list inheritance_relationship_list
+					    (object Inheritance_Relationship
+						quid       	"3B1175530064"
+						supplier   	"ParteObjeto"
+						quidu      	"3B11738501AA")))
+				    (object Class "FormaComentario"
+					quid       	"3B1174F40176"
+					superclasses 	(list inheritance_relationship_list
+					    (object Inheritance_Relationship
+						quid       	"3B11755703C7"
+						supplier   	"ParteObjeto"
+						quidu      	"3B11738501AA")))
+				    (object Class "FormaConceito"
+					quid       	"3B1174FC0235"
+					superclasses 	(list inheritance_relationship_list
+					    (object Inheritance_Relationship
+						quid       	"3B117559037A"
+						supplier   	"ParteObjeto"
+						quidu      	"3B11738501AA")))
+				    (object Class "FormaEstado"
+					quid       	"3B1175040183"
+					superclasses 	(list inheritance_relationship_list
+					    (object Inheritance_Relationship
+						quid       	"3B11755B034A"
+						supplier   	"ParteObjeto"
+						quidu      	"3B11738501AA")))
+				    (object Class "FormaEstadoFinal"
+					quid       	"3B11750C02F7"
+					superclasses 	(list inheritance_relationship_list
+					    (object Inheritance_Relationship
+						quid       	"3B11755E0395"
+						supplier   	"ParteObjeto"
+						quidu      	"3B11738501AA")))
+				    (object Class "FormaClasse"
+					quid       	"3B117B3C0091"
+					superclasses 	(list inheritance_relationship_list
+					    (object Inheritance_Relationship
+						quid       	"3B117B480111"
+						supplier   	"ParteObjeto"
+						quidu      	"3B11738501AA"))))
+				logical_presentations 	(list unit_reference_list
+				    (object ClassDiagram "Overview"
+					quid       	"3B11752801FD"
+					title      	"Overview"
+					zoom       	100
+					max_height 	28350
+					max_width  	21600
+					origin_x   	0
+					origin_y   	0
+					items      	(list diagram_item_list
+					    (object ClassView "Class" "FormaAtor" @153
+						IncludeAttribute 	TRUE
+						IncludeOperation 	TRUE
+						location   	(155, 558)
+						label      	(object ItemLabel
+						    Parent_View 	@153
+						    location   	(42, 509)
+						    nlines     	1
+						    max_width  	225
+						    justify    	0
+						    label      	"FormaAtor")
+						quidu      	"3B1174EC0228"
+						width      	244
+						height     	122
+						annotation 	8
+						autoResize 	TRUE)
+					    (object ClassView "Class" "FormaComentario" @154
+						IncludeAttribute 	TRUE
+						IncludeOperation 	TRUE
+						location   	(496, 558)
+						label      	(object ItemLabel
+						    Parent_View 	@154
+						    location   	(317, 509)
+						    nlines     	1
+						    max_width  	357
+						    justify    	0
+						    label      	"FormaComentario")
+						quidu      	"3B1174F40176"
+						width      	386
+						height     	122
+						annotation 	8
+						autoResize 	TRUE)
+					    (object ClassView "Class" "FormaConceito" @155
+						IncludeAttribute 	TRUE
+						IncludeOperation 	TRUE
+						location   	(868, 558)
+						label      	(object ItemLabel
+						    Parent_View 	@155
+						    location   	(716, 509)
+						    nlines     	1
+						    max_width  	303
+						    justify    	0
+						    label      	"FormaConceito")
+						quidu      	"3B1174FC0235"
+						width      	328
+						height     	122
+						annotation 	8
+						autoResize 	TRUE)
+					    (object ClassView "Class" "FormaEstado" @156
+						IncludeAttribute 	TRUE
+						IncludeOperation 	TRUE
+						location   	(1209, 558)
+						label      	(object ItemLabel
+						    Parent_View 	@156
+						    location   	(1068, 509)
+						    nlines     	1
+						    max_width  	281
+						    justify    	0
+						    label      	"FormaEstado")
+						quidu      	"3B1175040183"
+						width      	304
+						height     	122
+						annotation 	8
+						autoResize 	TRUE)
+					    (object ClassView "Class" "FormaEstadoFinal" @157
+						IncludeAttribute 	TRUE
+						IncludeOperation 	TRUE
+						location   	(1581, 558)
+						label      	(object ItemLabel
+						    Parent_View 	@157
+						    location   	(1399, 509)
+						    nlines     	1
+						    max_width  	362
+						    justify    	0
+						    label      	"FormaEstadoFinal")
+						quidu      	"3B11750C02F7"
+						width      	392
+						height     	122
+						annotation 	8
+						autoResize 	TRUE)
+					    (object ClassView "Class" "FormaClasse" @158
+						IncludeAttribute 	TRUE
+						IncludeOperation 	TRUE
+						location   	(1953, 558)
+						label      	(object ItemLabel
+						    Parent_View 	@158
+						    location   	(1818, 509)
+						    nlines     	1
+						    max_width  	268
+						    justify    	0
+						    label      	"FormaClasse")
+						quidu      	"3B117B3C0091"
+						width      	290
+						height     	122
+						annotation 	8
+						autoResize 	TRUE))))))
+			logical_presentations 	(list unit_reference_list
+			    (object ClassDiagram "Overview"
+				quid       	"3B11782200C2"
+				title      	"Overview"
+				zoom       	100
+				max_height 	28350
+				max_width  	21600
+				origin_x   	0
+				origin_y   	0
+				items      	(list diagram_item_list))))
+		    (object Class_Category "Controlador"
+			quid       	"3B1177840042"
+			exportControl 	"Public"
+			logical_models 	(list unit_reference_list
+			    (object Class "IControladorObjeto"
+				quid       	"3B1177960233"
+				stereotype 	"Interface")
+			    (object Class "IControladorConector"
+				quid       	"3B1177A4032E")
+			    (object Class "ControladorObjetoClasse"
+				quid       	"3B117A790091"
+				superclasses 	(list inheritance_relationship_list
+				    (object Inheritance_Relationship
+					quid       	"3B117AAB0089"
+					supplier   	"IControladorObjeto"
+					quidu      	"3B1177960233")))
+			    (object Class "ControladorObjetoAtor"
+				quid       	"3B117A8901A2"
+				superclasses 	(list inheritance_relationship_list
+				    (object Inheritance_Relationship
+					quid       	"3B117AAC031F"
+					supplier   	"IControladorObjeto"
+					quidu      	"3B1177960233"))))
+			logical_presentations 	(list unit_reference_list
+			    (object ClassDiagram "Overview"
+				quid       	"3B117A9C01AA"
+				title      	"Overview"
+				zoom       	100
+				max_height 	28350
+				max_width  	21600
+				origin_x   	0
+				origin_y   	0
+				items      	(list diagram_item_list
+				    (object ClassView "Class" "IControladorObjeto" @159
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(651, 186)
+					label      	(object ItemLabel
+					    Parent_View 	@159
+					    location   	(468, 162)
+					    nlines     	1
+					    max_width  	364
+					    justify    	0
+					    label      	"IControladorObjeto")
+					stereotype 	(object ItemLabel
+					    Parent_View 	@159
+					    location   	(468, 112)
+					    anchor     	10
+					    nlines     	1
+					    max_width  	364
+					    justify    	0
+					    label      	"<<Interface>>")
+					quidu      	"3B1177960233"
+					width      	394
+					height     	172
+					annotation 	8
+					autoResize 	TRUE)
+				    (object ClassView "Class" "ControladorObjetoClasse" @160
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(372, 527)
+					label      	(object ItemLabel
+					    Parent_View 	@160
+					    location   	(133, 478)
+					    nlines     	1
+					    max_width  	477
+					    justify    	0
+					    label      	"ControladorObjetoClasse")
+					quidu      	"3B117A790091"
+					width      	516
+					height     	122
+					annotation 	8
+					autoResize 	TRUE)
+				    (object ClassView "Class" "ControladorObjetoAtor" @161
+					IncludeAttribute 	TRUE
+					IncludeOperation 	TRUE
+					location   	(899, 527)
+					label      	(object ItemLabel
+					    Parent_View 	@161
+					    location   	(682, 478)
+					    nlines     	1
+					    max_width  	432
+					    justify    	0
+					    label      	"ControladorObjetoAtor")
+					quidu      	"3B117A8901A2"
+					width      	468
+					height     	122
+					annotation 	8
+					autoResize 	TRUE)
+				    (object InheritView "" @162
+					quidu      	"3B117AAB0089"
+					client     	@160
+					supplier   	@159
+					line_style 	0)
+				    (object InheritView "" @163
+					quidu      	"3B117AAC031F"
+					client     	@161
+					supplier   	@159
+					line_style 	0)))))
+		    (object Class_Category "Fabricas"
+			quid       	"3B117AE90182"
+			exportControl 	"Public"
+			logical_models 	(list unit_reference_list
+			    (object Class "FabricaSemantica"
+				quid       	"3B117AF10184")
+			    (object Class "FabricaControlador"
+				quid       	"3B117B01030E"
+				used_nodes 	(list uses_relationship_list
+				    (object Uses_Relationship
+					quid       	"3B117B14012A"
+					supplier   	"ControladorObjetoClasse"
+					quidu      	"3B117A790091"))))
+			logical_presentations 	(list unit_reference_list))
+		    (object Mechanism @164
+			logical_models 	(list unit_reference_list
+			    (object Object "$UNNAMED$79"
+				quid       	"3B17E0890179"
+				collaborators 	(list link_list
+				    (object Link
+					quid       	"3B17E0ED0322"
+					supplier   	"$UNNAMED$80"
+					quidu      	"3B17E0A502CE"
+					messages   	(list Messages
+					    (object Message "InsereObjeto"
+						quid       	"3B17E0ED0323"
+						frequency  	"Aperiodic"
+						synchronization 	"Simple"
+						dir        	"FromClientToSupplier"
+						sequence   	""
+						ordinal    	0)
+					    (object Message "AbreJanelaObjeto"
+						quid       	"3B17E1090083"
+						frequency  	"Aperiodic"
+						synchronization 	"Simple"
+						dir        	"ToClientFromSupplier"
+						sequence   	""
+						ordinal    	1)
+					    (object Message "// Dados Objeto"
+						quid       	"3B17E118023D"
+						frequency  	"Aperiodic"
+						synchronization 	"Simple"
+						dir        	"FromClientToSupplier"
+						sequence   	""
+						ordinal    	2))))
+				class      	"Usuario"
+				quidu      	"3B117D580283"
+				persistence 	"Persistent"
+				multi      	FALSE)
+			    (object Object "$UNNAMED$80"
+				quid       	"3B17E0A502CE"
+				collaborators 	(list link_list
+				    (object Link
+					quid       	"3B17E13703E6"
+					supplier   	"$UNNAMED$81"
+					quidu      	"3B17E0DD01A2"
+					messages   	(list Messages
+					    (object Message "GetObjeto"
+						quid       	"3B17E13703E7"
+						frequency  	"Aperiodic"
+						synchronization 	"Simple"
+						dir        	"FromClientToSupplier"
+						sequence   	""
+						ordinal    	3)
+					    (object Message "//Objeto"
+						quid       	"3B17E15E0053"
+						frequency  	"Aperiodic"
+						synchronization 	"Simple"
+						dir        	"ToClientFromSupplier"
+						sequence   	""
+						ordinal    	7)))
+				    (object Link
+					quid       	"3B17E21402A4"
+					supplier   	"$UNNAMED$82"
+					quidu      	"3B17E1FB00C7")
+				    (object Link
+					quid       	"3B17E2A90294"
+					supplier   	"$UNNAMED$83"
+					quidu      	"3B17E2770206")
+				    (object Link
+					quid       	"3B17E31700DA"
+					supplier   	"$UNNAMED$80"
+					quidu      	"3B17E0A502CE"
+					messages   	(list Messages
+					    (object Message "Paint"
+						quid       	"3B17E31700DB"
+						frequency  	"Aperiodic"
+						synchronization 	"Simple"
+						dir        	"FromClientToSupplier"
+						sequence   	""
+						ordinal    	11)))
+				    (object Link
+					quid       	"3B17E39E0387"
+					supplier   	"$UNNAMED$84"
+					quidu      	"3B17E3690091"
+					messages   	(list Messages
+					    (object Message "CriaViewObjeto"
+						quid       	"3B17E39E0388"
+						frequency  	"Aperiodic"
+						synchronization 	"Simple"
+						dir        	"FromClientToSupplier"
+						sequence   	""
+						ordinal    	8)
+					    (object Message "//ViewObjeto"
+						quid       	"3B17E3D702E8"
+						frequency  	"Aperiodic"
+						synchronization 	"Simple"
+						dir        	"ToClientFromSupplier"
+						sequence   	""
+						ordinal    	10))))
+				class      	"Diagrama"
+				quidu      	"3B1175BD0215"
+				persistence 	"Transient"
+				multi      	FALSE)
+			    (object Object "$UNNAMED$81"
+				quid       	"3B17E0DD01A2"
+				collaborators 	(list link_list
+				    (object Link
+					quid       	"3B17E23B0001"
+					supplier   	"$UNNAMED$82"
+					quidu      	"3B17E1FB00C7"
+					messages   	(list Messages
+					    (object Message "[Não Existe] Create"
+						quid       	"3B17E23B0002"
+						frequency  	"Aperiodic"
+						synchronization 	"Simple"
+						dir        	"FromClientToSupplier"
+						sequence   	""
+						ordinal    	4)))
+				    (object Link
+					quid       	"3B17ED010274"
+					supplier   	"$UNNAMED$85"
+					quidu      	"3B17ECF503AD"
+					messages   	(list Messages
+					    (object Message "[Não Existe] NotificaCriacaoObjeto"
+						quid       	"3B17ED010275"
+						frequency  	"Aperiodic"
+						synchronization 	"Simple"
+						dir        	"FromClientToSupplier"
+						sequence   	""
+						ordinal    	5))))
+				class      	"Projeto"
+				quidu      	"3B17E0D301C6"
+				persistence 	"Transient"
+				multi      	FALSE)
+			    (object Object "$UNNAMED$82"
+				quid       	"3B17E1FB00C7"
+				class      	"Objeto"
+				quidu      	"3B1176E603A3"
+				persistence 	"Transient"
+				multi      	FALSE)
+			    (object Object "$UNNAMED$83"
+				quid       	"3B17E2770206"
+				class      	"ViewObjeto"
+				quidu      	"3B17E2880142"
+				persistence 	"Transient"
+				multi      	FALSE)
+			    (object Object "$UNNAMED$84"
+				quid       	"3B17E3690091"
+				collaborators 	(list link_list
+				    (object Link
+					quid       	"3B17E3AB01E1"
+					supplier   	"$UNNAMED$83"
+					quidu      	"3B17E2770206"
+					messages   	(list Messages
+					    (object Message "Create"
+						quid       	"3B17E3AB01E2"
+						frequency  	"Aperiodic"
+						synchronization 	"Simple"
+						dir        	"FromClientToSupplier"
+						sequence   	""
+						ordinal    	9))))
+				class      	"FabricaSemantica"
+				quidu      	"3B117AF10184"
+				persistence 	"Transient"
+				multi      	FALSE)
+			    (object Object "$UNNAMED$85"
+				quid       	"3B17ECF503AD"
+				collaborators 	(list link_list
+				    (object Link
+					quid       	"3B17ED2801BB"
+					supplier   	"$UNNAMED$85"
+					quidu      	"3B17ECF503AD"
+					messages   	(list Messages
+					    (object Message "InsereNovoNode"
+						quid       	"3B17ED2801BC"
+						frequency  	"Aperiodic"
+						synchronization 	"Simple"
+						dir        	"FromClientToSupplier"
+						sequence   	""
+						ordinal    	6))))
+				class      	"TBase"
+				quidu      	"3B17E97E007C"
+				persistence 	"Transient"
+				multi      	FALSE)))
+		    (object Mechanism @165
+			logical_models 	(list unit_reference_list
+			    (object Object "$UNNAMED$86"
+				quid       	"3B17E51602AB"
+				collaborators 	(list link_list
+				    (object Link
+					quid       	"3B17E54A02BA"
+					supplier   	"$UNNAMED$87"
+					quidu      	"3B17E51C0047"
+					messages   	(list Messages
+					    (object Message "RenameViewObjeto(nome)"
+						quid       	"3B17E54A02BB"
+						frequency  	"Aperiodic"
+						synchronization 	"Simple"
+						dir        	"FromClientToSupplier"
+						sequence   	""
+						ordinal    	0))))
+				class      	"Usuario"
+				quidu      	"3B117D580283"
+				persistence 	"Transient"
+				multi      	FALSE)
+			    (object Object "$UNNAMED$87"
+				quid       	"3B17E51C0047"
+				collaborators 	(list link_list
+				    (object Link
+					quid       	"3B17E5B503D6"
+					supplier   	"$UNNAMED$88"
+					quidu      	"3B17E5660288"
+					messages   	(list Messages
+					    (object Message "GetObjeto"
+						quid       	"3B17E5B503D7"
+						frequency  	"Aperiodic"
+						synchronization 	"Simple"
+						dir        	"FromClientToSupplier"
+						sequence   	""
+						ordinal    	1)
+					    (object Message "//Objeto"
+						quid       	"3B17E5FD0004"
+						frequency  	"Aperiodic"
+						synchronization 	"Simple"
+						dir        	"ToClientFromSupplier"
+						sequence   	""
+						ordinal    	5)))
+				    (object Link
+					quid       	"3B17E6130150"
+					supplier   	"$UNNAMED$89"
+					quidu      	"3B17E51D008E"
+					messages   	(list Messages
+					    (object Message "SetObjeto(Objeto)"
+						quid       	"3B17E6130151"
+						frequency  	"Aperiodic"
+						synchronization 	"Simple"
+						dir        	"FromClientToSupplier"
+						sequence   	""
+						ordinal    	6)))
+				    (object Link
+					quid       	"3B17EA5900F9"
+					supplier   	"$UNNAMED$87"
+					quidu      	"3B17E51C0047"
+					messages   	(list Messages
+					    (object Message "Paint"
+						quid       	"3B17EA5900FA"
+						frequency  	"Aperiodic"
+						synchronization 	"Simple"
+						dir        	"FromClientToSupplier"
+						sequence   	""
+						ordinal    	7))))
+				class      	"Diagrama"
+				quidu      	"3B1175BD0215"
+				persistence 	"Transient"
+				multi      	FALSE)
+			    (object Object "$UNNAMED$89"
+				quid       	"3B17E51D008E"
+				class      	"ViewObjeto"
+				quidu      	"3B17E2880142"
+				persistence 	"Transient"
+				multi      	FALSE)
+			    (object Object "$UNNAMED$90"
+				quid       	"3B17E51E0180"
+				class      	"Objeto"
+				quidu      	"3B1176E603A3"
+				persistence 	"Transient"
+				multi      	FALSE)
+			    (object Object "$UNNAMED$88"
+				quid       	"3B17E5660288"
+				collaborators 	(list link_list
+				    (object Link
+					quid       	"3B17E5E000CB"
+					supplier   	"$UNNAMED$90"
+					quidu      	"3B17E51E0180"
+					messages   	(list Messages
+					    (object Message "[Não Existe] Create"
+						quid       	"3B17E5E000CC"
+						frequency  	"Aperiodic"
+						synchronization 	"Simple"
+						dir        	"FromClientToSupplier"
+						sequence   	""
+						ordinal    	2)))
+				    (object Link
+					quid       	"3B17E9DF0307"
+					supplier   	"Base"
+					quidu      	"3B17E97301A3"
+					messages   	(list Messages
+					    (object Message "[Não Existe] NotificaCriacaoObjeto(Objeto)"
+						quid       	"3B17E9DF0308"
+						frequency  	"Aperiodic"
+						synchronization 	"Simple"
+						dir        	"FromClientToSupplier"
+						sequence   	""
+						ordinal    	3))))
+				class      	"Projeto"
+				quidu      	"3B17E0D301C6"
+				persistence 	"Transient"
+				multi      	FALSE)
+			    (object Object "Base"
+				quid       	"3B17E97301A3"
+				collaborators 	(list link_list
+				    (object Link
+					quid       	"3B17EA0D00C8"
+					supplier   	"Base"
+					quidu      	"3B17E97301A3"
+					messages   	(list Messages
+					    (object Message "InsereNovoNode"
+						quid       	"3B17EA0D00C9"
+						frequency  	"Aperiodic"
+						synchronization 	"Simple"
+						dir        	"FromClientToSupplier"
+						sequence   	""
+						ordinal    	4))))
+				class      	"TBase"
+				quidu      	"3B17E97E007C"
+				persistence 	"Transient"
+				multi      	FALSE))))
+		logical_presentations 	(list unit_reference_list
+		    (object ClassDiagram "Overview"
+			quid       	"3B11764A0204"
+			title      	"Overview"
+			zoom       	100
+			max_height 	28350
+			max_width  	21600
+			origin_x   	0
+			origin_y   	0
+			items      	(list diagram_item_list
+			    (object ClassView "Class" "Connector" @166
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(1891, 682)
+				label      	(object ItemLabel
+				    Parent_View 	@166
+				    location   	(1762, 609)
+				    nlines     	1
+				    max_width  	257
+				    justify    	0
+				    label      	"Connector")
+				quidu      	"3B1176ED0045"
+				width      	278
+				height     	170
+				annotation 	8
+				autoResize 	TRUE)
+			    (object ClassView "Class" "ListaEncadeadaObj" @167
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(1116, 682)
+				label      	(object ItemLabel
+				    Parent_View 	@167
+				    location   	(925, 633)
+				    nlines     	1
+				    max_width  	381
+				    justify    	0
+				    label      	"ListaEncadeadaObj")
+				quidu      	"3B1176120040"
+				width      	412
+				height     	122
+				annotation 	8
+				autoResize 	TRUE)
+			    (object AssociationViewNew "$UNNAMED$55" @168
+				location   	(1536, 682)
+				quidu      	"3B1176FC01A5"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$56" @169
+					Parent_View 	@168
+					location   	(420, 0)
+					quidu      	"3B1176FC030E"
+					client     	@168
+					supplier   	@166
+					line_style 	0
+					label      	(object SegLabel @170
+					    Parent_View 	@169
+					    location   	(1729, 736)
+					    anchor     	2
+					    anchor_loc 	1
+					    nlines     	1
+					    max_width  	15
+					    justify    	0
+					    label      	"*"
+					    pctDist    	0.900000
+					    height     	54
+					    orientation 	1))
+				    (object RoleView "$UNNAMED$57" @171
+					Parent_View 	@168
+					location   	(420, 0)
+					quidu      	"3B1176FC030F"
+					client     	@168
+					supplier   	@167
+					line_style 	0
+					label      	(object SegLabel @172
+					    Parent_View 	@171
+					    location   	(1343, 736)
+					    anchor     	2
+					    anchor_loc 	1
+					    nlines     	1
+					    max_width  	15
+					    justify    	0
+					    label      	"1"
+					    pctDist    	0.900000
+					    height     	54
+					    orientation 	0))))
+			    (object ClassView "Class" "Objeto" @173
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(1891, 310)
+				label      	(object ItemLabel
+				    Parent_View 	@173
+				    location   	(1785, 237)
+				    nlines     	1
+				    max_width  	210
+				    justify    	0
+				    label      	"Objeto")
+				quidu      	"3B1176E603A3"
+				width      	228
+				height     	170
+				annotation 	8
+				autoResize 	TRUE)
+			    (object ClassView "Class" "ListaEncadeadaConn" @174
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(1116, 310)
+				label      	(object ItemLabel
+				    Parent_View 	@174
+				    location   	(907, 261)
+				    nlines     	1
+				    max_width  	416
+				    justify    	0
+				    label      	"ListaEncadeadaConn")
+				quidu      	"3B11760A025C"
+				width      	450
+				height     	122
+				annotation 	8
+				autoResize 	TRUE)
+			    (object AssociationViewNew "$UNNAMED$58" @175
+				location   	(1558, 310)
+				quidu      	"3B117716015D"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$59" @176
+					Parent_View 	@175
+					location   	(442, 0)
+					quidu      	"3B1177160329"
+					client     	@175
+					supplier   	@173
+					line_style 	0
+					label      	(object SegLabel @177
+					    Parent_View 	@176
+					    location   	(1753, 364)
+					    anchor     	2
+					    anchor_loc 	1
+					    nlines     	1
+					    max_width  	15
+					    justify    	0
+					    label      	"*"
+					    pctDist    	0.900000
+					    height     	54
+					    orientation 	1))
+				    (object RoleView "$UNNAMED$60" @178
+					Parent_View 	@175
+					location   	(442, 0)
+					quidu      	"3B117716032A"
+					client     	@175
+					supplier   	@174
+					line_style 	0
+					label      	(object SegLabel @179
+					    Parent_View 	@178
+					    location   	(1364, 364)
+					    anchor     	2
+					    anchor_loc 	1
+					    nlines     	1
+					    max_width  	15
+					    justify    	0
+					    label      	"1"
+					    pctDist    	0.900000
+					    height     	54
+					    orientation 	0))))
+			    (object ClassView "Class" "Diagrama" @180
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(310, 465)
+				label      	(object ItemLabel
+				    Parent_View 	@180
+				    location   	(173, 416)
+				    nlines     	1
+				    max_width  	273
+				    justify    	0
+				    label      	"Diagrama")
+				quidu      	"3B1175BD0215"
+				width      	296
+				height     	122
+				annotation 	8
+				autoResize 	TRUE)
+			    (object AssociationViewNew "contém" @181
+				location   	(683, 564)
+				label      	(object SegLabel @182
+				    Parent_View 	@181
+				    location   	(650, 599)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	TRUE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	144
+				    justify    	0
+				    label      	"contém"
+				    pctDist    	-0.050000
+				    height     	35
+				    orientation 	1)
+				quidu      	"3B117676027F"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$53" @183
+					Parent_View 	@181
+					location   	(-92, 99)
+					quidu      	"3B1176770014"
+					client     	@181
+					supplier   	@167
+					line_style 	0
+					label      	(object SegLabel @184
+					    Parent_View 	@183
+					    location   	(873, 670)
+					    anchor     	2
+					    anchor_loc 	1
+					    nlines     	1
+					    max_width  	50
+					    justify    	0
+					    label      	"1"
+					    pctDist    	0.896623
+					    height     	53
+					    orientation 	1))
+				    (object RoleView "$UNNAMED$54" @185
+					Parent_View 	@181
+					location   	(-92, 99)
+					quidu      	"3B1176770015"
+					client     	@181
+					supplier   	@180
+					line_style 	0
+					label      	(object SegLabel @186
+					    Parent_View 	@185
+					    location   	(467, 562)
+					    anchor     	2
+					    anchor_loc 	1
+					    nlines     	1
+					    max_width  	15
+					    justify    	0
+					    label      	"1"
+					    pctDist    	0.900000
+					    height     	54
+					    orientation 	0))))
+			    (object AssociationViewNew "contém" @187
+				location   	(674, 393)
+				label      	(object SegLabel @188
+				    Parent_View 	@187
+				    location   	(674, 334)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	TRUE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    anchor     	1
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	600
+				    justify    	0
+				    label      	"contém"
+				    pctDist    	0.500000
+				    height     	60
+				    orientation 	0)
+				quidu      	"3B117674029A"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$51" @189
+					Parent_View 	@187
+					location   	(-101, -72)
+					quidu      	"3B1176750115"
+					client     	@187
+					supplier   	@174
+					line_style 	0
+					label      	(object SegLabel @190
+					    Parent_View 	@189
+					    location   	(873, 317)
+					    anchor     	2
+					    anchor_loc 	1
+					    nlines     	1
+					    max_width  	15
+					    justify    	0
+					    label      	"1"
+					    pctDist    	0.956072
+					    height     	38
+					    orientation 	0))
+				    (object RoleView "$UNNAMED$52" @191
+					Parent_View 	@187
+					location   	(-101, -72)
+					quidu      	"3B1176750116"
+					client     	@187
+					supplier   	@180
+					line_style 	0
+					label      	(object SegLabel @192
+					    Parent_View 	@191
+					    location   	(485, 395)
+					    anchor     	2
+					    anchor_loc 	1
+					    nlines     	1
+					    max_width  	15
+					    justify    	0
+					    label      	"1"
+					    pctDist    	0.843635
+					    height     	36
+					    orientation 	1))))
+			    (object ClassView "Class" "Projeto" @193
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(310, 930)
+				label      	(object ItemLabel
+				    Parent_View 	@193
+				    location   	(168, 880)
+				    nlines     	1
+				    max_width  	283
+				    justify    	0
+				    label      	"Projeto")
+				quidu      	"3B17E0D301C6"
+				width      	307
+				height     	125
+				annotation 	8
+				autoResize 	TRUE)
+			    (object AssociationViewNew "$UNNAMED$61" @194
+				location   	(310, 696)
+				quidu      	"3B17EBB30287"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$62" @195
+					Parent_View 	@194
+					location   	(0, 231)
+					quidu      	"3B17EBB303C8"
+					client     	@194
+					supplier   	@193
+					line_style 	0)
+				    (object RoleView "$UNNAMED$63" @196
+					Parent_View 	@194
+					location   	(0, 231)
+					quidu      	"3B17EBB303C9"
+					client     	@194
+					supplier   	@180
+					line_style 	0)))
+			    (object ClassView "Class" "ItemModelo" @197
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(310, 124)
+				label      	(object ItemLabel
+				    Parent_View 	@197
+				    location   	(108, 43)
+				    nlines     	1
+				    max_width  	403
+				    justify    	0
+				    label      	"ItemModelo")
+				quidu      	"3B17EBD50395"
+				compartment 	(object Compartment
+				    Parent_View 	@197
+				    location   	(101, 103)
+				    anchor     	2
+				    nlines     	2
+				    max_width  	416)
+				width      	436
+				height     	186
+				annotation 	8
+				autoResize 	TRUE)
+			    (object InheritView "" @198
+				quidu      	"3B17EBE803D8"
+				client     	@180
+				supplier   	@197
+				line_style 	0)))
+		    (object InteractionDiagram "InsereObjetoDiagrama"
+			mechanism_ref 	@164
+			quid       	"3B17E07900FE"
+			title      	"InsereObjetoDiagrama"
+			zoom       	75
+			max_height 	28350
+			max_width  	21600
+			origin_x   	0
+			origin_y   	0
+			items      	(list diagram_item_list
+			    (object InterObjView "$UNNAMED$79" @199
+				location   	(186, 217)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	TRUE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				icon       	"Actor"
+				quidu      	"3B17E0890179"
+				width      	326
+				height     	1721
+				icon_height 	156
+				icon_width 	114
+				annotation 	1
+				Focus_Of_Control 	(object Focus_Of_Control "" @200
+				    location   	(186, 403)
+				    InterObjView 	@199
+				    height     	120
+				    y_coord    	60
+				    Nested     	FALSE)
+				Focus_Of_Control 	(object Focus_Of_Control "" @201
+				    location   	(186, 527)
+				    InterObjView 	@199
+				    height     	60
+				    y_coord    	0
+				    Nested     	FALSE)
+				Focus_Of_Control 	(object Focus_Of_Control "" @202
+				    location   	(186, 651)
+				    InterObjView 	@199
+				    height     	120
+				    y_coord    	60
+				    Nested     	FALSE))
+			    (object InterObjView "$UNNAMED$80" @203
+				location   	(620, 217)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	TRUE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				quidu      	"3B17E0A502CE"
+				width      	300
+				height     	1721
+				icon_height 	0
+				icon_width 	0
+				annotation 	1
+				Focus_Of_Control 	(object Focus_Of_Control "" @204
+				    location   	(527, 403)
+				    InterObjView 	@203
+				    height     	60
+				    y_coord    	0
+				    Nested     	FALSE)
+				Focus_Of_Control 	(object Focus_Of_Control "" @205
+				    location   	(682, 496)
+				    InterObjView 	@203
+				    height     	151
+				    y_coord    	91
+				    Nested     	FALSE)
+				Focus_Of_Control 	(object Focus_Of_Control "" @206
+				    location   	(682, 651)
+				    InterObjView 	@203
+				    height     	60
+				    y_coord    	0
+				    Nested     	FALSE)
+				Focus_Of_Control 	(object Focus_Of_Control "" @207
+				    location   	(682, 744)
+				    InterObjView 	@203
+				    height     	120
+				    y_coord    	60
+				    Nested     	FALSE)
+				Focus_Of_Control 	(object Focus_Of_Control "" @208
+				    location   	(682, 1240)
+				    InterObjView 	@203
+				    height     	60
+				    y_coord    	0
+				    Nested     	FALSE)
+				Focus_Of_Control 	(object Focus_Of_Control "" @209
+				    location   	(620, 1488)
+				    InterObjView 	@203
+				    height     	120
+				    y_coord    	60
+				    Nested     	FALSE)
+				Focus_Of_Control 	(object Focus_Of_Control "" @210
+				    location   	(651, 1643)
+				    InterObjView 	@203
+				    height     	60
+				    y_coord    	0
+				    Nested     	FALSE)
+				Focus_Of_Control 	(object Focus_Of_Control "" @211
+				    location   	(620, 1736)
+				    InterObjView 	@203
+				    height     	120
+				    y_coord    	60
+				    Nested     	FALSE))
+			    (object InterObjView "$UNNAMED$81" @212
+				location   	(992, 217)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	TRUE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				quidu      	"3B17E0DD01A2"
+				width      	300
+				height     	1721
+				icon_height 	0
+				icon_width 	0
+				annotation 	1
+				Focus_Of_Control 	(object Focus_Of_Control "" @213
+				    location   	(1147, 744)
+				    InterObjView 	@212
+				    height     	60
+				    y_coord    	0
+				    Nested     	FALSE)
+				Focus_Of_Control 	(object Focus_Of_Control "" @214
+				    location   	(1209, 806)
+				    InterObjView 	@212
+				    height     	554
+				    y_coord    	494
+				    Nested     	FALSE))
+			    (object InterObjView "$UNNAMED$82" @215
+				location   	(1426, 217)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	TRUE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				quidu      	"3B17E1FB00C7"
+				width      	300
+				height     	1721
+				icon_height 	0
+				icon_width 	0
+				annotation 	1
+				Focus_Of_Control 	(object Focus_Of_Control "" @216
+				    location   	(1643, 868)
+				    InterObjView 	@215
+				    height     	60
+				    y_coord    	0
+				    Nested     	FALSE))
+			    (object InterObjView "$UNNAMED$83" @217
+				location   	(2108, 217)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	TRUE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				quidu      	"3B17E2770206"
+				width      	300
+				height     	1721
+				icon_height 	0
+				icon_width 	0
+				annotation 	1
+				Focus_Of_Control 	(object Focus_Of_Control "" @218
+				    location   	(2666, 1581)
+				    InterObjView 	@217
+				    height     	60
+				    y_coord    	0
+				    Nested     	FALSE))
+			    (object InterObjView "$UNNAMED$85" @219
+				location   	(2449, 217)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	TRUE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				quidu      	"3B17ECF503AD"
+				width      	300
+				height     	1721
+				icon_height 	0
+				icon_width 	0
+				annotation 	1
+				Focus_Of_Control 	(object Focus_Of_Control "" @220
+				    location   	(2449, 1054)
+				    InterObjView 	@219
+				    height     	60
+				    y_coord    	0
+				    Nested     	FALSE)
+				Focus_Of_Control 	(object Focus_Of_Control "" @221
+				    location   	(2449, 1147)
+				    InterObjView 	@219
+				    height     	151
+				    y_coord    	91
+				    Nested     	FALSE))
+			    (object InterObjView "$UNNAMED$84" @222
+				location   	(1767, 217)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	TRUE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				quidu      	"3B17E3690091"
+				width      	300
+				height     	1721
+				icon_height 	0
+				icon_width 	0
+				annotation 	1
+				Focus_Of_Control 	(object Focus_Of_Control "" @223
+				    location   	(2201, 1488)
+				    InterObjView 	@222
+				    height     	60
+				    y_coord    	0
+				    Nested     	FALSE)
+				Focus_Of_Control 	(object Focus_Of_Control "" @224
+				    location   	(1767, 1581)
+				    InterObjView 	@222
+				    height     	182
+				    y_coord    	122
+				    Nested     	FALSE))
+			    (object InterMessView "" @225
+				location   	(0, 403)
+				label      	(object SegLabel @226
+				    Parent_View 	@225
+				    location   	(403, 359)
+				    quidu      	"3B17E0ED0323"
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	267
+				    justify    	0
+				    label      	"InsereObjeto"
+				    pctDist    	0.500000
+				    height     	45
+				    orientation 	0)
+				client     	@199
+				supplier   	@203
+				Focus_Src  	@200
+				Focus_Entry 	@204
+				origin     	(202, 403)
+				terminus   	(604, 403)
+				ordinal    	0)
+			    (object InterMessView "" @227
+				location   	(0, 527)
+				label      	(object SegLabel @228
+				    Parent_View 	@227
+				    location   	(403, 483)
+				    quidu      	"3B17E1090083"
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	350
+				    justify    	0
+				    label      	"AbreJanelaObjeto"
+				    pctDist    	0.500000
+				    height     	45
+				    orientation 	1)
+				client     	@203
+				supplier   	@199
+				Focus_Src  	@205
+				Focus_Entry 	@201
+				origin     	(604, 527)
+				terminus   	(202, 527)
+				ordinal    	1)
+			    (object InterMessView "" @229
+				location   	(0, 651)
+				label      	(object SegLabel @230
+				    Parent_View 	@229
+				    location   	(403, 607)
+				    quidu      	"3B17E118023D"
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	321
+				    justify    	0
+				    label      	"// Dados Objeto"
+				    pctDist    	0.500000
+				    height     	45
+				    orientation 	0)
+				client     	@199
+				supplier   	@203
+				Focus_Src  	@202
+				Focus_Entry 	@206
+				origin     	(202, 651)
+				terminus   	(604, 651)
+				ordinal    	2)
+			    (object InterMessView "" @231
+				location   	(0, 744)
+				label      	(object SegLabel @232
+				    Parent_View 	@231
+				    location   	(806, 700)
+				    quidu      	"3B17E13703E7"
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	221
+				    justify    	0
+				    label      	"GetObjeto"
+				    pctDist    	0.500000
+				    height     	45
+				    orientation 	0)
+				client     	@203
+				supplier   	@212
+				Focus_Src  	@207
+				Focus_Entry 	@213
+				origin     	(636, 744)
+				terminus   	(976, 744)
+				ordinal    	3)
+			    (object InterMessView "" @233
+				location   	(0, 1240)
+				label      	(object SegLabel @234
+				    Parent_View 	@233
+				    location   	(806, 1196)
+				    quidu      	"3B17E15E0053"
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	183
+				    justify    	0
+				    label      	"//Objeto"
+				    pctDist    	0.500000
+				    height     	45
+				    orientation 	1)
+				client     	@212
+				supplier   	@203
+				Focus_Src  	@214
+				Focus_Entry 	@208
+				origin     	(976, 1240)
+				terminus   	(636, 1240)
+				ordinal    	7)
+			    (object InterMessView "" @235
+				location   	(0, 868)
+				label      	(object SegLabel @236
+				    Parent_View 	@235
+				    location   	(1209, 824)
+				    quidu      	"3B17E23B0002"
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	391
+				    justify    	0
+				    label      	
+|[Não Existe] Create
+				    
+				    pctDist    	0.500000
+				    height     	45
+				    orientation 	0)
+				client     	@212
+				supplier   	@215
+				Focus_Src  	@214
+				Focus_Entry 	@216
+				origin     	(1008, 868)
+				terminus   	(1410, 868)
+				ordinal    	4)
+			    (object SelfMessView "" @237
+				location   	(0, 1736)
+				label      	(object SegLabel @238
+				    Parent_View 	@237
+				    location   	(806, 1694)
+				    quidu      	"3B17E31700DB"
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	154
+				    justify    	0
+				    label      	"Paint"
+				    pctDist    	1.140000
+				    height     	43
+				    orientation 	0)
+				client     	@203
+				supplier   	@203
+				Focus_Src  	@211
+				origin     	(636, 1736)
+				terminus   	(786, 1736)
+				ordinal    	11)
+			    (object InterMessView "" @239
+				location   	(0, 1488)
+				label      	(object SegLabel @240
+				    Parent_View 	@239
+				    location   	(1193, 1444)
+				    quidu      	"3B17E39E0388"
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	308
+				    justify    	0
+				    label      	"CriaViewObjeto"
+				    pctDist    	0.500000
+				    height     	45
+				    orientation 	0)
+				client     	@203
+				supplier   	@222
+				Focus_Src  	@209
+				Focus_Entry 	@223
+				origin     	(636, 1488)
+				terminus   	(1751, 1488)
+				ordinal    	8)
+			    (object InterMessView "" @241
+				location   	(0, 1581)
+				label      	(object SegLabel @242
+				    Parent_View 	@241
+				    location   	(1935, 1536)
+				    quidu      	"3B17E3AB01E2"
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	183
+				    justify    	0
+				    label      	"Create"
+				    pctDist    	0.495146
+				    height     	46
+				    orientation 	0)
+				client     	@222
+				supplier   	@217
+				Focus_Src  	@224
+				Focus_Entry 	@218
+				origin     	(1783, 1581)
+				terminus   	(2092, 1581)
+				ordinal    	9)
+			    (object InterMessView "" @243
+				location   	(0, 1643)
+				label      	(object SegLabel @244
+				    Parent_View 	@243
+				    location   	(1194, 1599)
+				    quidu      	"3B17E3D702E8"
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	283
+				    justify    	0
+				    label      	"//ViewObjeto"
+				    pctDist    	0.500000
+				    height     	45
+				    orientation 	1)
+				client     	@222
+				supplier   	@203
+				Focus_Src  	@224
+				Focus_Entry 	@210
+				origin     	(1751, 1643)
+				terminus   	(636, 1643)
+				ordinal    	10)
+			    (object InterMessView "" @245
+				location   	(0, 1054)
+				label      	(object SegLabel @246
+				    Parent_View 	@245
+				    location   	(1720, 1010)
+				    quidu      	"3B17ED010275"
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	658
+				    justify    	0
+				    label      	
+|[Não Existe] NotificaCriacaoObjeto
+				    
+				    pctDist    	0.500000
+				    height     	45
+				    orientation 	0)
+				client     	@212
+				supplier   	@219
+				Focus_Src  	@214
+				Focus_Entry 	@220
+				origin     	(1008, 1054)
+				terminus   	(2433, 1054)
+				ordinal    	5)
+			    (object SelfMessView "" @247
+				location   	(0, 1178)
+				label      	(object SegLabel @248
+				    Parent_View 	@247
+				    location   	(2666, 1133)
+				    quidu      	"3B17ED2801BC"
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	341
+				    justify    	0
+				    label      	"InsereNovoNode"
+				    pctDist    	1.340000
+				    height     	46
+				    orientation 	0)
+				client     	@219
+				supplier   	@219
+				Focus_Src  	@221
+				origin     	(2465, 1178)
+				terminus   	(2615, 1178)
+				ordinal    	6)))
+		    (object InteractionDiagram "RenomeiaViewObjeto"
+			mechanism_ref 	@165
+			quid       	"3B17E4F7002F"
+			title      	"RenomeiaViewObjeto"
+			zoom       	85
+			max_height 	28350
+			max_width  	21600
+			origin_x   	0
+			origin_y   	0
+			items      	(list diagram_item_list
+			    (object InterObjView "$UNNAMED$86" @249
+				location   	(124, 217)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	TRUE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				icon       	"Actor"
+				quidu      	"3B17E51602AB"
+				width      	326
+				height     	1318
+				icon_height 	156
+				icon_width 	114
+				annotation 	1
+				Focus_Of_Control 	(object Focus_Of_Control "" @250
+				    location   	(248, 403)
+				    InterObjView 	@249
+				    height     	120
+				    y_coord    	60
+				    Nested     	FALSE))
+			    (object InterObjView "$UNNAMED$87" @251
+				location   	(620, 217)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	TRUE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				quidu      	"3B17E51C0047"
+				width      	300
+				height     	1318
+				icon_height 	0
+				icon_width 	0
+				annotation 	1
+				Focus_Of_Control 	(object Focus_Of_Control "" @252
+				    location   	(589, 403)
+				    InterObjView 	@251
+				    height     	60
+				    y_coord    	0
+				    Nested     	FALSE)
+				Focus_Of_Control 	(object Focus_Of_Control "" @253
+				    location   	(744, 496)
+				    InterObjView 	@251
+				    height     	120
+				    y_coord    	60
+				    Nested     	FALSE)
+				Focus_Of_Control 	(object Focus_Of_Control "" @254
+				    location   	(744, 961)
+				    InterObjView 	@251
+				    height     	60
+				    y_coord    	0
+				    Nested     	FALSE)
+				Focus_Of_Control 	(object Focus_Of_Control "" @255
+				    location   	(744, 1054)
+				    InterObjView 	@251
+				    height     	182
+				    y_coord    	122
+				    Nested     	FALSE)
+				Focus_Of_Control 	(object Focus_Of_Control "" @256
+				    location   	(620, 1302)
+				    InterObjView 	@251
+				    height     	151
+				    y_coord    	91
+				    Nested     	FALSE))
+			    (object InterObjView "$UNNAMED$89" @257
+				location   	(1302, 217)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	TRUE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				quidu      	"3B17E51D008E"
+				width      	300
+				height     	1318
+				icon_height 	0
+				icon_width 	0
+				annotation 	1
+				Focus_Of_Control 	(object Focus_Of_Control "" @258
+				    location   	(1426, 1116)
+				    InterObjView 	@257
+				    height     	60
+				    y_coord    	0
+				    Nested     	FALSE))
+			    (object InterObjView "$UNNAMED$90" @259
+				location   	(1643, 217)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	TRUE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				quidu      	"3B17E51E0180"
+				width      	300
+				height     	1318
+				icon_height 	0
+				icon_width 	0
+				annotation 	1
+				Focus_Of_Control 	(object Focus_Of_Control "" @260
+				    location   	(1767, 589)
+				    InterObjView 	@259
+				    height     	60
+				    y_coord    	0
+				    Nested     	FALSE))
+			    (object InterObjView "Base" @261
+				location   	(1984, 217)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	TRUE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@261
+				    location   	(1984, 217)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	282
+				    justify    	0
+				    label      	"Base")
+				quidu      	"3B17E97301A3"
+				width      	300
+				height     	1318
+				icon_height 	0
+				icon_width 	0
+				annotation 	1
+				Focus_Of_Control 	(object Focus_Of_Control "" @262
+				    location   	(2108, 744)
+				    InterObjView 	@261
+				    height     	60
+				    y_coord    	0
+				    Nested     	FALSE)
+				Focus_Of_Control 	(object Focus_Of_Control "" @263
+				    location   	(2108, 837)
+				    InterObjView 	@261
+				    height     	120
+				    y_coord    	60
+				    Nested     	FALSE))
+			    (object InterObjView "$UNNAMED$88" @264
+				location   	(961, 217)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	TRUE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				quidu      	"3B17E5660288"
+				width      	300
+				height     	1318
+				icon_height 	0
+				icon_width 	0
+				annotation 	1
+				Focus_Of_Control 	(object Focus_Of_Control "" @265
+				    location   	(1085, 496)
+				    InterObjView 	@264
+				    height     	60
+				    y_coord    	0
+				    Nested     	FALSE)
+				Focus_Of_Control 	(object Focus_Of_Control "" @266
+				    location   	(1085, 558)
+				    InterObjView 	@264
+				    height     	523
+				    y_coord    	463
+				    Nested     	FALSE))
+			    (object InterMessView "" @267
+				location   	(0, 403)
+				label      	(object SegLabel @268
+				    Parent_View 	@267
+				    location   	(368, 363)
+				    quidu      	"3B17E54A02BB"
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	545
+				    justify    	0
+				    label      	"RenameViewObjeto(nome)"
+				    pctDist    	0.493534
+				    height     	41
+				    orientation 	0)
+				client     	@249
+				supplier   	@251
+				Focus_Src  	@250
+				Focus_Entry 	@252
+				origin     	(140, 403)
+				terminus   	(604, 403)
+				ordinal    	0)
+			    (object InterMessView "" @269
+				location   	(0, 496)
+				label      	(object SegLabel @270
+				    Parent_View 	@269
+				    location   	(790, 452)
+				    quidu      	"3B17E5B503D7"
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	233
+				    justify    	0
+				    label      	"GetObjeto"
+				    pctDist    	0.500000
+				    height     	45
+				    orientation 	0)
+				client     	@251
+				supplier   	@264
+				Focus_Src  	@253
+				Focus_Entry 	@265
+				origin     	(636, 496)
+				terminus   	(945, 496)
+				ordinal    	1)
+			    (object InterMessView "" @271
+				location   	(0, 589)
+				label      	(object SegLabel @272
+				    Parent_View 	@271
+				    location   	(1302, 545)
+				    quidu      	"3B17E5E000CC"
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	396
+				    justify    	0
+				    label      	
+|[Não Existe] Create
+				    
+				    pctDist    	0.500000
+				    height     	45
+				    orientation 	0)
+				client     	@264
+				supplier   	@259
+				Focus_Src  	@266
+				Focus_Entry 	@260
+				origin     	(977, 589)
+				terminus   	(1627, 589)
+				ordinal    	2)
+			    (object InterMessView "" @273
+				location   	(0, 961)
+				label      	(object SegLabel @274
+				    Parent_View 	@273
+				    location   	(791, 917)
+				    quidu      	"3B17E5FD0004"
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	184
+				    justify    	0
+				    label      	"//Objeto"
+				    pctDist    	0.500000
+				    height     	45
+				    orientation 	1)
+				client     	@264
+				supplier   	@251
+				Focus_Src  	@266
+				Focus_Entry 	@254
+				origin     	(945, 961)
+				terminus   	(636, 961)
+				ordinal    	5)
+			    (object InterMessView "" @275
+				location   	(0, 1116)
+				label      	(object SegLabel @276
+				    Parent_View 	@275
+				    location   	(961, 1072)
+				    quidu      	"3B17E6130151"
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	360
+				    justify    	0
+				    label      	"SetObjeto(Objeto)"
+				    pctDist    	0.500000
+				    height     	45
+				    orientation 	0)
+				client     	@251
+				supplier   	@257
+				Focus_Src  	@255
+				Focus_Entry 	@258
+				origin     	(636, 1116)
+				terminus   	(1286, 1116)
+				ordinal    	6)
+			    (object InterMessView "" @277
+				location   	(0, 744)
+				label      	(object SegLabel @278
+				    Parent_View 	@277
+				    location   	(1472, 700)
+				    quidu      	"3B17E9DF0308"
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	822
+				    justify    	0
+				    label      	
+|[Não Existe] NotificaCriacaoObjeto(Objeto)
+				    
+				    pctDist    	0.500000
+				    height     	45
+				    orientation 	0)
+				client     	@264
+				supplier   	@261
+				Focus_Src  	@266
+				Focus_Entry 	@262
+				origin     	(977, 744)
+				terminus   	(1968, 744)
+				ordinal    	3)
+			    (object SelfMessView "" @279
+				location   	(0, 837)
+				label      	(object SegLabel @280
+				    Parent_View 	@279
+				    location   	(2194, 796)
+				    quidu      	"3B17EA0D00C9"
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	352
+				    justify    	0
+				    label      	"InsereNovoNode"
+				    pctDist    	1.293333
+				    height     	41
+				    orientation 	0)
+				client     	@261
+				supplier   	@261
+				Focus_Src  	@263
+				origin     	(2000, 837)
+				terminus   	(2150, 837)
+				ordinal    	4)
+			    (object SelfMessView "" @281
+				location   	(0, 1333)
+				label      	(object SegLabel @282
+				    Parent_View 	@281
+				    location   	(711, 1289)
+				    quidu      	"3B17EA5900FA"
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	136
+				    justify    	0
+				    label      	"Paint"
+				    pctDist    	0.500000
+				    height     	45
+				    orientation 	0)
+				client     	@251
+				supplier   	@251
+				Focus_Src  	@256
+				origin     	(636, 1333)
+				terminus   	(786, 1333)
+				ordinal    	7)
+			    (object NoteView @283
+				location   	(2356, 279)
+				label      	(object ItemLabel
+				    Parent_View 	@283
+				    location   	(2217, 146)
+				    nlines     	5
+				    max_width  	242
+				    label      	"Insere na árvore utilizando o Parent do objeto")
+				width      	302
+				height     	279)
+			    (object AttachView "" @284
+				client     	@283
+				supplier   	@261
+				line_style 	0))))))
+	logical_presentations 	(list unit_reference_list
+	    (object ClassDiagram "Main"
+		quid       	"3B116FB70240"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))))
+    root_subsystem 	(object SubSystem "Component View"
+	quid       	"3B116FB6019F"
+	physical_models 	(list unit_reference_list)
+	physical_presentations 	(list unit_reference_list
+	    (object Module_Diagram "Main"
+		quid       	"3B116FB7027C"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))))
+    process_structure 	(object Processes
+	quid       	"3B116FB601A0"
+	ProcsNDevs 	(list
+	    (object Process_Diagram "Deployment View"
+		quid       	"3B116FB7019F"
+		title      	"Deployment View"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))))
+    properties 	(object Properties
+	attributes 	(list Attribute_Set
+	    (object Attribute
+		tool       	"cg"
+		name       	"roseId"
+		value      	"753117540")
+	    (object Attribute
+		tool       	"cg"
+		name       	"propertyId"
+		value      	"809135966")
+	    (object Attribute
+		tool       	"cg"
+		name       	"default__Project"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"cg"
+			name       	"HeaderFileExtension"
+			value      	"h")
+		    (object Attribute
+			tool       	"cg"
+			name       	"HeaderFileBackupExtension"
+			value      	"h~")
+		    (object Attribute
+			tool       	"cg"
+			name       	"HeaderFileTemporaryExtension"
+			value      	"h#")
+		    (object Attribute
+			tool       	"cg"
+			name       	"CodeFileExtension"
+			value      	"cpp")
+		    (object Attribute
+			tool       	"cg"
+			name       	"CodeFileBackupExtension"
+			value      	"cp~")
+		    (object Attribute
+			tool       	"cg"
+			name       	"CodeFileTemporaryExtension"
+			value      	"cp#")
+		    (object Attribute
+			tool       	"cg"
+			name       	"CreateMissingDirectories"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"StopOnError"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"ErrorLimit"
+			value      	30)
+		    (object Attribute
+			tool       	"cg"
+			name       	"Directory"
+			value      	"AUTO GENERATE")
+		    (object Attribute
+			tool       	"cg"
+			name       	"PathSeparator"
+			value      	"")
+		    (object Attribute
+			tool       	"cg"
+			name       	"FileNameFormat"
+			value      	"")
+		    (object Attribute
+			tool       	"cg"
+			name       	"BooleanType"
+			value      	"int")
+		    (object Attribute
+			tool       	"cg"
+			name       	"AllowTemplates"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"AllowProtectedInheritance"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"OneByValueContainer"
+			value      	"$targetClass")
+		    (object Attribute
+			tool       	"cg"
+			name       	"OneByReferenceContainer"
+			value      	"$targetClass *")
+		    (object Attribute
+			tool       	"cg"
+			name       	"OptionalByValueContainer"
+			value      	"OptionalByValue<$targetClass>")
+		    (object Attribute
+			tool       	"cg"
+			name       	"OptionalByReferenceContainer"
+			value      	"$targetClass *")
+		    (object Attribute
+			tool       	"cg"
+			name       	"FixedByValueContainer"
+			value      	"$targetClass[$limit]")
+		    (object Attribute
+			tool       	"cg"
+			name       	"UnorderedFixedByValueContainer"
+			value      	"$targetClass[$limit]")
+		    (object Attribute
+			tool       	"cg"
+			name       	"FixedByReferenceContainer"
+			value      	"$targetClass *[$limit]")
+		    (object Attribute
+			tool       	"cg"
+			name       	"UnorderedFixedByReferenceContainer"
+			value      	"$targetClass *[$limit]")
+		    (object Attribute
+			tool       	"cg"
+			name       	"BoundedByValueContainer"
+			value      	"BoundedListByValue<$targetClass,$limit>")
+		    (object Attribute
+			tool       	"cg"
+			name       	"UnorderedBoundedByValueContainer"
+			value      	"BoundedSetByValue<$targetClass,$limit>")
+		    (object Attribute
+			tool       	"cg"
+			name       	"BoundedByReferenceContainer"
+			value      	"BoundedListByReference<$targetClass,$limit>")
+		    (object Attribute
+			tool       	"cg"
+			name       	"UnorderedBoundedByReferenceContainer"
+			value      	"BoundedSetByReference<$targetClass,$limit>")
+		    (object Attribute
+			tool       	"cg"
+			name       	"UnboundedByValueContainer"
+			value      	"UnboundedListByValue<$targetClass>")
+		    (object Attribute
+			tool       	"cg"
+			name       	"UnorderedUnboundedByValueContainer"
+			value      	"UnboundedSetByValue<$targetClass>")
+		    (object Attribute
+			tool       	"cg"
+			name       	"UnboundedByReferenceContainer"
+			value      	"UnboundedListByReference<$targetClass>")
+		    (object Attribute
+			tool       	"cg"
+			name       	"UnorderedUnboundedByReferenceContainer"
+			value      	"UnboundedSetByReference<$targetClass>")
+		    (object Attribute
+			tool       	"cg"
+			name       	"QualifiedByValueContainer"
+			value      	"AssociationByValue<$qualtype, $qualcont>")
+		    (object Attribute
+			tool       	"cg"
+			name       	"UnorderedQualifiedByValueContainer"
+			value      	"DictionaryByValue<$qualtype, $qualcont>")
+		    (object Attribute
+			tool       	"cg"
+			name       	"QualifiedByReferenceContainer"
+			value      	"AssociationByReference<$qualtype, $qualcont>")
+		    (object Attribute
+			tool       	"cg"
+			name       	"UnorderedQualifiedByReferenceContainer"
+			value      	"DictionaryByReference<$qualtype, $qualcont>")
+		    (object Attribute
+			tool       	"cg"
+			name       	"GeneratePreserveRegions"
+			value      	TRUE)))
+	    (object Attribute
+		tool       	"cg"
+		name       	"compiler2.1__Project"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"cg"
+			name       	"HeaderFileExtension"
+			value      	"h")
+		    (object Attribute
+			tool       	"cg"
+			name       	"HeaderFileBackupExtension"
+			value      	"h~")
+		    (object Attribute
+			tool       	"cg"
+			name       	"HeaderFileTemporaryExtension"
+			value      	"h#")
+		    (object Attribute
+			tool       	"cg"
+			name       	"CodeFileExtension"
+			value      	"cpp")
+		    (object Attribute
+			tool       	"cg"
+			name       	"CodeFileBackupExtension"
+			value      	"cp~")
+		    (object Attribute
+			tool       	"cg"
+			name       	"CodeFileTemporaryExtension"
+			value      	"cp#")
+		    (object Attribute
+			tool       	"cg"
+			name       	"CreateMissingDirectories"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"StopOnError"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"ErrorLimit"
+			value      	30)
+		    (object Attribute
+			tool       	"cg"
+			name       	"Directory"
+			value      	"AUTO GENERATE")
+		    (object Attribute
+			tool       	"cg"
+			name       	"BooleanType"
+			value      	"int")
+		    (object Attribute
+			tool       	"cg"
+			name       	"AllowTemplates"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"AllowProtectedInheritance"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"OneByValueContainer"
+			value      	"$targetClass")
+		    (object Attribute
+			tool       	"cg"
+			name       	"OneByReferenceContainer"
+			value      	"$targetClass *")
+		    (object Attribute
+			tool       	"cg"
+			name       	"OptionalByValueContainer"
+			value      	"OptionalByValue(sizeof($targetClass))")
+		    (object Attribute
+			tool       	"cg"
+			name       	"OptionalByReferenceContainer"
+			value      	"$targetClass *")
+		    (object Attribute
+			tool       	"cg"
+			name       	"FixedByValueContainer"
+			value      	"$targetClass[$limit]")
+		    (object Attribute
+			tool       	"cg"
+			name       	"UnorderedFixedByValueContainer"
+			value      	"$targetClass[$limit]")
+		    (object Attribute
+			tool       	"cg"
+			name       	"FixedByReferenceContainer"
+			value      	"$targetClass *[$limit]")
+		    (object Attribute
+			tool       	"cg"
+			name       	"UnorderedFixedByReferenceContainer"
+			value      	"$targetClass *[$limit]")
+		    (object Attribute
+			tool       	"cg"
+			name       	"BoundedByValueContainer"
+			value      	"BoundedListByValue(sizeof($targetClass),$limit)")
+		    (object Attribute
+			tool       	"cg"
+			name       	"UnorderedBoundedByValueContainer"
+			value      	"BoundedSetByValue(sizeof($targetClass),$limit)")
+		    (object Attribute
+			tool       	"cg"
+			name       	"BoundedByReferenceContainer"
+			value      	"BoundedListByReference($limit)")
+		    (object Attribute
+			tool       	"cg"
+			name       	"UnorderedBoundedByReferenceContainer"
+			value      	"BoundedSetByReference($limit)")
+		    (object Attribute
+			tool       	"cg"
+			name       	"UnboundedByValueContainer"
+			value      	"UnboundedListByValue(sizeof($targetClass))")
+		    (object Attribute
+			tool       	"cg"
+			name       	"UnorderedUnboundedByValueContainer"
+			value      	"UnboundedSetByValue(sizeof($targetClass))")
+		    (object Attribute
+			tool       	"cg"
+			name       	"UnboundedByReferenceContainer"
+			value      	"UnboundedListByReference")
+		    (object Attribute
+			tool       	"cg"
+			name       	"UnorderedUnboundedByReferenceContainer"
+			value      	"UnboundedSetByReference")
+		    (object Attribute
+			tool       	"cg"
+			name       	"QualifiedByValueContainer"
+			value      	"AssociationByValue(sizeof($qualtype), sizeof($qualcont)")
+		    (object Attribute
+			tool       	"cg"
+			name       	"UnorderedQualifiedByValueContainer"
+			value      	"DictionaryByValue(sizeof($qualtype), sizeof($qualcont)")
+		    (object Attribute
+			tool       	"cg"
+			name       	"QualifiedByReferenceContainer"
+			value      	"AssociationByReference(sizeof($qualtype), sizeof($qualcont)")
+		    (object Attribute
+			tool       	"cg"
+			name       	"UnorderedQualifiedByReferenceContainer"
+			value      	"DictionaryByReference(sizeof($qualtype), sizeof($qualcont)")
+		    (object Attribute
+			tool       	"cg"
+			name       	"GeneratePreserveRegions"
+			value      	TRUE)))
+	    (object Attribute
+		tool       	"cg"
+		name       	"compiler3.0__Project"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"cg"
+			name       	"HeaderFileExtension"
+			value      	"h")
+		    (object Attribute
+			tool       	"cg"
+			name       	"HeaderFileBackupExtension"
+			value      	"h~")
+		    (object Attribute
+			tool       	"cg"
+			name       	"HeaderFileTemporaryExtension"
+			value      	"h#")
+		    (object Attribute
+			tool       	"cg"
+			name       	"CodeFileExtension"
+			value      	"cpp")
+		    (object Attribute
+			tool       	"cg"
+			name       	"CodeFileBackupExtension"
+			value      	"cp~")
+		    (object Attribute
+			tool       	"cg"
+			name       	"CodeFileTemporaryExtension"
+			value      	"cp#")
+		    (object Attribute
+			tool       	"cg"
+			name       	"CreateMissingDirectories"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"StopOnError"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"ErrorLimit"
+			value      	30)
+		    (object Attribute
+			tool       	"cg"
+			name       	"Directory"
+			value      	"AUTO GENERATE")
+		    (object Attribute
+			tool       	"cg"
+			name       	"BooleanType"
+			value      	"int")
+		    (object Attribute
+			tool       	"cg"
+			name       	"AllowTemplates"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"AllowProtectedInheritance"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"OneByValueContainer"
+			value      	"$targetClass")
+		    (object Attribute
+			tool       	"cg"
+			name       	"OneByReferenceContainer"
+			value      	"$targetClass *")
+		    (object Attribute
+			tool       	"cg"
+			name       	"OptionalByValueContainer"
+			value      	"OptionalByValue<$targetClass>")
+		    (object Attribute
+			tool       	"cg"
+			name       	"OptionalByReferenceContainer"
+			value      	"$targetClass *")
+		    (object Attribute
+			tool       	"cg"
+			name       	"FixedByValueContainer"
+			value      	"$targetClass[$limit]")
+		    (object Attribute
+			tool       	"cg"
+			name       	"UnorderedFixedByValueContainer"
+			value      	"$targetClass[$limit]")
+		    (object Attribute
+			tool       	"cg"
+			name       	"FixedByReferenceContainer"
+			value      	"$targetClass *[$limit]")
+		    (object Attribute
+			tool       	"cg"
+			name       	"UnorderedFixedByReferenceContainer"
+			value      	"$targetClass *[$limit]")
+		    (object Attribute
+			tool       	"cg"
+			name       	"BoundedByValueContainer"
+			value      	"BoundedListByValue<$targetClass,$limit>")
+		    (object Attribute
+			tool       	"cg"
+			name       	"UnorderedBoundedByValueContainer"
+			value      	"BoundedSetByValue<$targetClass,$limit>")
+		    (object Attribute
+			tool       	"cg"
+			name       	"BoundedByReferenceContainer"
+			value      	"BoundedListByReference<$targetClass,$limit>")
+		    (object Attribute
+			tool       	"cg"
+			name       	"UnorderedBoundedByReferenceContainer"
+			value      	"BoundedSetByReference<$targetClass,$limit>")
+		    (object Attribute
+			tool       	"cg"
+			name       	"UnboundedByValueContainer"
+			value      	"UnboundedListByValue<$targetClass>")
+		    (object Attribute
+			tool       	"cg"
+			name       	"UnorderedUnboundedByValueContainer"
+			value      	"UnboundedSetByValue<$targetClass>")
+		    (object Attribute
+			tool       	"cg"
+			name       	"UnboundedByReferenceContainer"
+			value      	"UnboundedListByReference<$targetClass>")
+		    (object Attribute
+			tool       	"cg"
+			name       	"UnorderedUnboundedByReferenceContainer"
+			value      	"UnboundedSetByReference<$targetClass>")
+		    (object Attribute
+			tool       	"cg"
+			name       	"QualifiedByValueContainer"
+			value      	"AssociationByValue<$qualtype, $qualcont>")
+		    (object Attribute
+			tool       	"cg"
+			name       	"UnorderedQualifiedByValueContainer"
+			value      	"DictionaryByValue<$qualtype, $qualcont>")
+		    (object Attribute
+			tool       	"cg"
+			name       	"QualifiedByReferenceContainer"
+			value      	"AssociationByReference<$qualtype, $qualcont>")
+		    (object Attribute
+			tool       	"cg"
+			name       	"UnorderedQualifiedByReferenceContainer"
+			value      	"DictionaryByReference<$qualtype, $qualcont>")
+		    (object Attribute
+			tool       	"cg"
+			name       	"GeneratePreserveRegions"
+			value      	TRUE)))
+	    (object Attribute
+		tool       	"cg"
+		name       	"default__Class"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"cg"
+			name       	"CodeName"
+			value      	"")
+		    (object Attribute
+			tool       	"cg"
+			name       	"ImplementationType"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"cg"
+			name       	"GenerateDefaultConstructor"
+			value      	("GenerateSet" 199))
+		    (object Attribute
+			tool       	"cg"
+			name       	"DefaultConstructorVisibility"
+			value      	("VisibilitySet" 45))
+		    (object Attribute
+			tool       	"cg"
+			name       	"InlineDefaultConstructor"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"GenerateCopyConstructor"
+			value      	("GenerateSet" 199))
+		    (object Attribute
+			tool       	"cg"
+			name       	"CopyConstructorVisibility"
+			value      	("VisibilitySet" 45))
+		    (object Attribute
+			tool       	"cg"
+			name       	"InlineCopyConstructor"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"GenerateDestructor"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"DestructorVisibility"
+			value      	("VisibilitySet" 45))
+		    (object Attribute
+			tool       	"cg"
+			name       	"DestructorKind"
+			value      	("ThreeKindSet" 200))
+		    (object Attribute
+			tool       	"cg"
+			name       	"InlineDestructor"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"GenerateAssignmentOperation"
+			value      	("GenerateSet" 199))
+		    (object Attribute
+			tool       	"cg"
+			name       	"AssignmentVisibility"
+			value      	("VisibilitySet" 45))
+		    (object Attribute
+			tool       	"cg"
+			name       	"AssignmentKind"
+			value      	("ThreeKindSet" 200))
+		    (object Attribute
+			tool       	"cg"
+			name       	"InlineAssignmentOperation"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"GenerateEqualityOperations"
+			value      	("GenerateSet" 199))
+		    (object Attribute
+			tool       	"cg"
+			name       	"EqualityVisibility"
+			value      	("VisibilitySet" 45))
+		    (object Attribute
+			tool       	"cg"
+			name       	"EqualityKind"
+			value      	("FriendKindSet" 200))
+		    (object Attribute
+			tool       	"cg"
+			name       	"InlineEqualityOperations"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"GenerateRelationalOperations"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"RelationalVisibility"
+			value      	("VisibilitySet" 45))
+		    (object Attribute
+			tool       	"cg"
+			name       	"RelationalKind"
+			value      	("FriendKindSet" 200))
+		    (object Attribute
+			tool       	"cg"
+			name       	"InlineRelationalOperations"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"GenerateStorageMgmtOperations"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"StorageMgmtVisibility"
+			value      	("VisibilitySet" 45))
+		    (object Attribute
+			tool       	"cg"
+			name       	"InlineStorageMgmtOperations"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"GenerateSubscriptOperation"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"SubscriptVisibility"
+			value      	("VisibilitySet" 45))
+		    (object Attribute
+			tool       	"cg"
+			name       	"SubscriptKind"
+			value      	("ThreeKindSet" 200))
+		    (object Attribute
+			tool       	"cg"
+			name       	"SubscriptResultType"
+			value      	"")
+		    (object Attribute
+			tool       	"cg"
+			name       	"InlineSubscriptOperation"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"GenerateDereferenceOperation"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"DereferenceVisibility"
+			value      	("VisibilitySet" 45))
+		    (object Attribute
+			tool       	"cg"
+			name       	"DereferenceKind"
+			value      	("ThreeKindSet" 200))
+		    (object Attribute
+			tool       	"cg"
+			name       	"DereferenceResultType"
+			value      	"")
+		    (object Attribute
+			tool       	"cg"
+			name       	"InlineDereferenceOperation"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"GenerateIndirectionOperation"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"IndirectionVisibility"
+			value      	("VisibilitySet" 45))
+		    (object Attribute
+			tool       	"cg"
+			name       	"IndirectionKind"
+			value      	("ThreeKindSet" 200))
+		    (object Attribute
+			tool       	"cg"
+			name       	"IndirectionResultType"
+			value      	"")
+		    (object Attribute
+			tool       	"cg"
+			name       	"InlineIndirectionOperation"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"GenerateStreamOperations"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"StreamVisibility"
+			value      	("VisibilitySet" 45))
+		    (object Attribute
+			tool       	"cg"
+			name       	"InlineStreamOperations"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"ThreeKindSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"cg"
+				name       	"Common"
+				value      	200)
+			    (object Attribute
+				tool       	"cg"
+				name       	"Virtual"
+				value      	201)
+			    (object Attribute
+				tool       	"cg"
+				name       	"Abstract"
+				value      	202)))
+		    (object Attribute
+			tool       	"cg"
+			name       	"KindSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"cg"
+				name       	"Common"
+				value      	200)
+			    (object Attribute
+				tool       	"cg"
+				name       	"Virtual"
+				value      	201)
+			    (object Attribute
+				tool       	"cg"
+				name       	"Abstract"
+				value      	202)
+			    (object Attribute
+				tool       	"cg"
+				name       	"Static"
+				value      	203)))
+		    (object Attribute
+			tool       	"cg"
+			name       	"FriendKindSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"cg"
+				name       	"Common"
+				value      	200)
+			    (object Attribute
+				tool       	"cg"
+				name       	"Virtual"
+				value      	201)
+			    (object Attribute
+				tool       	"cg"
+				name       	"Abstract"
+				value      	202)
+			    (object Attribute
+				tool       	"cg"
+				name       	"Friend"
+				value      	204)))
+		    (object Attribute
+			tool       	"cg"
+			name       	"GenerateSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"cg"
+				name       	"DeclareAndDefine"
+				value      	199)
+			    (object Attribute
+				tool       	"cg"
+				name       	"DeclareOnly"
+				value      	205)
+			    (object Attribute
+				tool       	"cg"
+				name       	"DoNotDeclare"
+				value      	206)))
+		    (object Attribute
+			tool       	"cg"
+			name       	"VisibilitySet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"cg"
+				name       	"Public"
+				value      	45)
+			    (object Attribute
+				tool       	"cg"
+				name       	"Protected"
+				value      	44)
+			    (object Attribute
+				tool       	"cg"
+				name       	"Private"
+				value      	43)
+			    (object Attribute
+				tool       	"cg"
+				name       	"Implementation"
+				value      	14)))
+		    (object Attribute
+			tool       	"cg"
+			name       	"ConstValue"
+			value      	"")
+		    (object Attribute
+			tool       	"cg"
+			name       	"GenerateDefaultSpecifier"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"DefaultSpecifier"
+			value      	"")
+		    (object Attribute
+			tool       	"cg"
+			name       	"IDLElement"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"IDLSpecificationType"
+			value      	("IDLSpecSet" 22))
+		    (object Attribute
+			tool       	"cg"
+			name       	"IDLSpecSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"cg"
+				name       	"Interface"
+				value      	22)
+			    (object Attribute
+				tool       	"cg"
+				name       	"Typedef"
+				value      	54)
+			    (object Attribute
+				tool       	"cg"
+				name       	"Enumeration"
+				value      	8)
+			    (object Attribute
+				tool       	"cg"
+				name       	"Const"
+				value      	71)
+			    (object Attribute
+				tool       	"cg"
+				name       	"Exception"
+				value      	61)
+			    (object Attribute
+				tool       	"cg"
+				name       	"Struct"
+				value      	51)
+			    (object Attribute
+				tool       	"cg"
+				name       	"Union"
+				value      	81)))))
+	    (object Attribute
+		tool       	"cg"
+		name       	"default__Module-Spec"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"cg"
+			name       	"Generate"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"CmIdentification"
+			value      	(value Text "  %X% %Q% %Z% %W%"))
+		    (object Attribute
+			tool       	"cg"
+			name       	"CopyrightNotice"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"cg"
+			name       	"FileName"
+			value      	"AUTO GENERATE")
+		    (object Attribute
+			tool       	"cg"
+			name       	"InclusionProtectionSymbol"
+			value      	"AUTO GENERATE")
+		    (object Attribute
+			tool       	"cg"
+			name       	"AdditionalIncludes"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"cg"
+			name       	"IncludeBySimpleName"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"InliningStyle"
+			value      	("InliningStyleSet" 207))
+		    (object Attribute
+			tool       	"cg"
+			name       	"InliningStyleSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"cg"
+				name       	"InClassDeclaration"
+				value      	208)
+			    (object Attribute
+				tool       	"cg"
+				name       	"FollowingClassDeclaration"
+				value      	207)))
+		    (object Attribute
+			tool       	"cg"
+			name       	"GenerateIDLModule"
+			value      	FALSE)))
+	    (object Attribute
+		tool       	"cg"
+		name       	"default__Module-Body"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"cg"
+			name       	"Generate"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"CmIdentification"
+			value      	(value Text "  %X% %Q% %Z% %W%"))
+		    (object Attribute
+			tool       	"cg"
+			name       	"CopyrightNotice"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"cg"
+			name       	"FileName"
+			value      	"AUTO GENERATE")
+		    (object Attribute
+			tool       	"cg"
+			name       	"AdditionalIncludes"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"cg"
+			name       	"IncludeBySimpleName"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"InliningStyle"
+			value      	("InliningStyleSet" 207))
+		    (object Attribute
+			tool       	"cg"
+			name       	"InliningStyleSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"cg"
+				name       	"InClassDeclaration"
+				value      	208)
+			    (object Attribute
+				tool       	"cg"
+				name       	"FollowingClassDeclaration"
+				value      	207)))))
+	    (object Attribute
+		tool       	"cg"
+		name       	"default__Operation"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"cg"
+			name       	"CodeName"
+			value      	"")
+		    (object Attribute
+			tool       	"cg"
+			name       	"OperationKind"
+			value      	("OperationKindSet" 200))
+		    (object Attribute
+			tool       	"cg"
+			name       	"OperationKindSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"cg"
+				name       	"Common"
+				value      	200)
+			    (object Attribute
+				tool       	"cg"
+				name       	"Virtual"
+				value      	201)
+			    (object Attribute
+				tool       	"cg"
+				name       	"Abstract"
+				value      	202)
+			    (object Attribute
+				tool       	"cg"
+				name       	"Static"
+				value      	203)
+			    (object Attribute
+				tool       	"cg"
+				name       	"Friend"
+				value      	204)))
+		    (object Attribute
+			tool       	"cg"
+			name       	"OperationIsConst"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"EntryCode"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"cg"
+			name       	"ExitCode"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"cg"
+			name       	"Inline"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"OperationIsOneWay"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"Context"
+			value      	"")
+		    (object Attribute
+			tool       	"cg"
+			name       	"Raises"
+			value      	"")))
+	    (object Attribute
+		tool       	"cg"
+		name       	"default__Has"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"cg"
+			name       	"CodeName"
+			value      	"")
+		    (object Attribute
+			tool       	"cg"
+			name       	"Ordered"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"NameIfUnlabeled"
+			value      	"the_$supplier")
+		    (object Attribute
+			tool       	"cg"
+			name       	"GenerateDataMember"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"DataMemberName"
+			value      	"$relationship")
+		    (object Attribute
+			tool       	"cg"
+			name       	"DataMemberVisibility"
+			value      	("DataMemberVisibilitySet" 14))
+		    (object Attribute
+			tool       	"cg"
+			name       	"DataMemberVisibilitySet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"cg"
+				name       	"Public"
+				value      	45)
+			    (object Attribute
+				tool       	"cg"
+				name       	"Protected"
+				value      	44)
+			    (object Attribute
+				tool       	"cg"
+				name       	"Private"
+				value      	43)
+			    (object Attribute
+				tool       	"cg"
+				name       	"Implementation"
+				value      	14)
+			    (object Attribute
+				tool       	"cg"
+				name       	"AtRelationshipVisibility"
+				value      	210)))
+		    (object Attribute
+			tool       	"cg"
+			name       	"GenerateGetOperation"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"GenerateSetOperation"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"GetName"
+			value      	"get_$relationship")
+		    (object Attribute
+			tool       	"cg"
+			name       	"SetName"
+			value      	"set_$relationship")
+		    (object Attribute
+			tool       	"cg"
+			name       	"GetSetKinds"
+			value      	("GetSetKindsSet" 200))
+		    (object Attribute
+			tool       	"cg"
+			name       	"GetSetKindsSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"cg"
+				name       	"Common"
+				value      	200)
+			    (object Attribute
+				tool       	"cg"
+				name       	"Virtual"
+				value      	201)
+			    (object Attribute
+				tool       	"cg"
+				name       	"Abstract"
+				value      	202)
+			    (object Attribute
+				tool       	"cg"
+				name       	"Static"
+				value      	203)
+			    (object Attribute
+				tool       	"cg"
+				name       	"Friend"
+				value      	204)))
+		    (object Attribute
+			tool       	"cg"
+			name       	"ContainerClass"
+			value      	"")
+		    (object Attribute
+			tool       	"cg"
+			name       	"SelectorName"
+			value      	"")
+		    (object Attribute
+			tool       	"cg"
+			name       	"SelectorType"
+			value      	"")
+		    (object Attribute
+			tool       	"cg"
+			name       	"GetIsConst"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"GetSetByReference"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"InlineGet"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"SetReturnsValue"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"InlineSet"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"ForwardReferenceOnly"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"GenerateForwardReference"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"IsReadOnly"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"BoundedHasRelType"
+			value      	("HasRelTypeSet" 47))
+		    (object Attribute
+			tool       	"cg"
+			name       	"HasRelTypeSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"cg"
+				name       	"Array"
+				value      	24)
+			    (object Attribute
+				tool       	"cg"
+				name       	"Sequence"
+				value      	47)))))
+	    (object Attribute
+		tool       	"cg"
+		name       	"default__Association"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"cg"
+			name       	"NameIfUnlabeled"
+			value      	"the_$targetClass")))
+	    (object Attribute
+		tool       	"cg"
+		name       	"default__Role"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"cg"
+			name       	"CodeName"
+			value      	"")
+		    (object Attribute
+			tool       	"cg"
+			name       	"ForwardReferenceOnly"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"NameIfUnlabeled"
+			value      	"the_$targetClass")
+		    (object Attribute
+			tool       	"cg"
+			name       	"GenerateDataMember"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"DataMemberName"
+			value      	"$target")
+		    (object Attribute
+			tool       	"cg"
+			name       	"DataMemberVisibility"
+			value      	("DataMemberVisibilitySet" 14))
+		    (object Attribute
+			tool       	"cg"
+			name       	"DataMemberVisibilitySet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"cg"
+				name       	"Public"
+				value      	45)
+			    (object Attribute
+				tool       	"cg"
+				name       	"Protected"
+				value      	44)
+			    (object Attribute
+				tool       	"cg"
+				name       	"Private"
+				value      	43)
+			    (object Attribute
+				tool       	"cg"
+				name       	"Implementation"
+				value      	14)
+			    (object Attribute
+				tool       	"cg"
+				name       	"AtRelationshipVisibility"
+				value      	210)))
+		    (object Attribute
+			tool       	"cg"
+			name       	"ContainerClass"
+			value      	"")
+		    (object Attribute
+			tool       	"cg"
+			name       	"QualifiedContainer"
+			value      	"")
+		    (object Attribute
+			tool       	"cg"
+			name       	"AssocClassContainer"
+			value      	"$supplier *")
+		    (object Attribute
+			tool       	"cg"
+			name       	"GetSetKinds"
+			value      	("GetSetKindsSet" 200))
+		    (object Attribute
+			tool       	"cg"
+			name       	"GetSetKindsSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"cg"
+				name       	"Common"
+				value      	200)
+			    (object Attribute
+				tool       	"cg"
+				name       	"Virtual"
+				value      	201)
+			    (object Attribute
+				tool       	"cg"
+				name       	"Abstract"
+				value      	202)
+			    (object Attribute
+				tool       	"cg"
+				name       	"Static"
+				value      	203)
+			    (object Attribute
+				tool       	"cg"
+				name       	"Friend"
+				value      	204)))
+		    (object Attribute
+			tool       	"cg"
+			name       	"GetSetByReference"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"GenerateGetOperation"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"GetName"
+			value      	"get_$target")
+		    (object Attribute
+			tool       	"cg"
+			name       	"GetIsConst"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"InlineGet"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"GenerateSetOperation"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"SetName"
+			value      	"set_$target")
+		    (object Attribute
+			tool       	"cg"
+			name       	"SetReturnsValue"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"InlineSet"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"GenerateQualifiedGetOperation"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"QualifiedGetName"
+			value      	"get_$target")
+		    (object Attribute
+			tool       	"cg"
+			name       	"QualifiedGetIsConst"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"InlineQualifiedGet"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"GenerateQualifiedSetOperation"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"QualifiedSetName"
+			value      	"set_$target")
+		    (object Attribute
+			tool       	"cg"
+			name       	"QualifiedSetReturnsValue"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"InlineQualifiedSet"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"GenerateAssocClassDataMember"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"AssocClassDataMemberName"
+			value      	"$target")
+		    (object Attribute
+			tool       	"cg"
+			name       	"AssocClassDataMemberVisibility"
+			value      	("DataMemberVisibilitySet" 14))
+		    (object Attribute
+			tool       	"cg"
+			name       	"DataMemberVisibilitySet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"cg"
+				name       	"Public"
+				value      	45)
+			    (object Attribute
+				tool       	"cg"
+				name       	"Protected"
+				value      	44)
+			    (object Attribute
+				tool       	"cg"
+				name       	"Private"
+				value      	43)
+			    (object Attribute
+				tool       	"cg"
+				name       	"Implementation"
+				value      	14)
+			    (object Attribute
+				tool       	"cg"
+				name       	"AtRelationshipVisibility"
+				value      	210)))
+		    (object Attribute
+			tool       	"cg"
+			name       	"AssocClassGetSetKinds"
+			value      	("GetSetKindsSet" 200))
+		    (object Attribute
+			tool       	"cg"
+			name       	"GenerateAssocClassGetOperation"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"AssocClassGetName"
+			value      	"get_$target")
+		    (object Attribute
+			tool       	"cg"
+			name       	"AssocClassGetIsConst"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"InlineAssocClassGet"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"GenerateAssocClassSetOperation"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"AssocClassSetName"
+			value      	"set_$target")
+		    (object Attribute
+			tool       	"cg"
+			name       	"AssocClassSetReturnsValue"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"InlineAssocClassSet"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"AssocClassForwardReferenceOnly"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"GenerateForwardReference"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"IsReadOnly"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"BoundedRoleType"
+			value      	("AssocTypeSet" 47))
+		    (object Attribute
+			tool       	"cg"
+			name       	"AssocTypeSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"cg"
+				name       	"Array"
+				value      	24)
+			    (object Attribute
+				tool       	"cg"
+				name       	"Sequence"
+				value      	47)))))
+	    (object Attribute
+		tool       	"cg"
+		name       	"default__Attribute"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"cg"
+			name       	"CodeName"
+			value      	"")
+		    (object Attribute
+			tool       	"cg"
+			name       	"GenerateDataMember"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"DataMemberName"
+			value      	"$attribute")
+		    (object Attribute
+			tool       	"cg"
+			name       	"DataMemberVisibility"
+			value      	("DataMemberVisibilitySet" 14))
+		    (object Attribute
+			tool       	"cg"
+			name       	"DataMemberVisibilitySet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"cg"
+				name       	"Public"
+				value      	45)
+			    (object Attribute
+				tool       	"cg"
+				name       	"Protected"
+				value      	44)
+			    (object Attribute
+				tool       	"cg"
+				name       	"Private"
+				value      	43)
+			    (object Attribute
+				tool       	"cg"
+				name       	"Implementation"
+				value      	14)
+			    (object Attribute
+				tool       	"cg"
+				name       	"AtAttributeVisibility"
+				value      	211)))
+		    (object Attribute
+			tool       	"cg"
+			name       	"GenerateGetOperation"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"GenerateSetOperation"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"GetName"
+			value      	"get_$attribute")
+		    (object Attribute
+			tool       	"cg"
+			name       	"SetName"
+			value      	"set_$attribute")
+		    (object Attribute
+			tool       	"cg"
+			name       	"GetSetKinds"
+			value      	("GetSetKindsSet" 200))
+		    (object Attribute
+			tool       	"cg"
+			name       	"GetSetKindsSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"cg"
+				name       	"Common"
+				value      	200)
+			    (object Attribute
+				tool       	"cg"
+				name       	"Virtual"
+				value      	201)
+			    (object Attribute
+				tool       	"cg"
+				name       	"Abstract"
+				value      	202)
+			    (object Attribute
+				tool       	"cg"
+				name       	"Static"
+				value      	203)
+			    (object Attribute
+				tool       	"cg"
+				name       	"Friend"
+				value      	204)))
+		    (object Attribute
+			tool       	"cg"
+			name       	"GetIsConst"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"GetSetByReference"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"InlineGet"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"SetReturnsValue"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"InlineSet"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"CaseSpecifier"
+			value      	"")
+		    (object Attribute
+			tool       	"cg"
+			name       	"IsReadOnly"
+			value      	FALSE)))
+	    (object Attribute
+		tool       	"cg"
+		name       	"default__Uses"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"cg"
+			name       	"ForwardReferenceOnly"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"GenerateForwardReference"
+			value      	FALSE)))
+	    (object Attribute
+		tool       	"cg"
+		name       	"default__Subsystem"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"cg"
+			name       	"Directory"
+			value      	"AUTO GENERATE")))
+	    (object Attribute
+		tool       	"DDL"
+		name       	"propertyId"
+		value      	"809135966")
+	    (object Attribute
+		tool       	"DDL"
+		name       	"default__Project"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"DDL"
+			name       	"DataBase"
+			value      	("DataBaseSet" 800))
+		    (object Attribute
+			tool       	"DDL"
+			name       	"DataBaseSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"DDL"
+				name       	"ANSI"
+				value      	800)
+			    (object Attribute
+				tool       	"DDL"
+				name       	"Oracle"
+				value      	801)
+			    (object Attribute
+				tool       	"DDL"
+				name       	"SQLServer"
+				value      	802)
+			    (object Attribute
+				tool       	"DDL"
+				name       	"Sybase"
+				value      	803)
+			    (object Attribute
+				tool       	"DDL"
+				name       	"Watcom"
+				value      	804)))
+		    (object Attribute
+			tool       	"DDL"
+			name       	"PrimaryKeyColumnName"
+			value      	"Id")
+		    (object Attribute
+			tool       	"DDL"
+			name       	"PrimaryKeyColumnType"
+			value      	"NUMBER(5)")
+		    (object Attribute
+			tool       	"DDL"
+			name       	"ViewName"
+			value      	"V_")
+		    (object Attribute
+			tool       	"DDL"
+			name       	"TableName"
+			value      	"T_")
+		    (object Attribute
+			tool       	"DDL"
+			name       	"InheritSuffix"
+			value      	"_V")
+		    (object Attribute
+			tool       	"DDL"
+			name       	"DropClause"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"DDL"
+			name       	"BaseViews"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"DDL"
+			name       	"DDLScriptFilename"
+			value      	"DDL1.SQL")))
+	    (object Attribute
+		tool       	"DDL"
+		name       	"default__Attribute"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"DDL"
+			name       	"ColumnType"
+			value      	"VARCHAR")
+		    (object Attribute
+			tool       	"DDL"
+			name       	"Length"
+			value      	"")
+		    (object Attribute
+			tool       	"DDL"
+			name       	"NullsOK"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"DDL"
+			name       	"PrimaryKey"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"DDL"
+			name       	"Unique"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"DDL"
+			name       	"CompositeUnique"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"DDL"
+			name       	"CheckConstraint"
+			value      	"")))
+	    (object Attribute
+		tool       	"cg"
+		name       	"default__Category"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"cg"
+			name       	"GenerateIDLModule"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"cg"
+			name       	"ModuleName"
+			value      	(value Text "")))))
+	quid       	"3B116FB601A1"))

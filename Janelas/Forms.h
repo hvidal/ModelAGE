@@ -1,0 +1,6 @@
+#include "frmPropriedadesClasse.h"
+#include "frmPropriedadesObjeto.h"
+#include "frmConn.h"
+#include "frmPrinter.h"
+#include "frmDomain.h"
+#include "frmDiagramador.h"

@@ -1,0 +1,5 @@
+{TODO : 
+Mudar o ultimo if da função agrupaobjetos, onde o for interno pode ser trocado por
+um metodo que traz o conector dado o seu id.}{TODO : Trocar as listas encadeadas por TLists...}{TODO : Colocar um ABC atachado a um conector.}{TODO : Impedir que o grupo de objetos selecionados seja levado para fora da tela.}{TODO  :
+- Consertar a conexão de retas associativas em conectores com pontos
+de quebra.}{TODO : - Tratar arraste dos pontos selecionados (Select Group)...}{DONE : - Tratar criação de pontos conforme o usuário vai clicando até o destino.}
